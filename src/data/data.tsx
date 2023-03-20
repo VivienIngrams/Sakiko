@@ -3,6 +3,7 @@ import {
 } from '@heroicons/react/outline';
 
 import InstagramIcon from '../components/Icon/InstagramIcon';
+import profilepic from '../images/portfolio/book.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -14,8 +15,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/Sakiko/book.jpg';
-import heroImage from '../images/Sakiko/Photo de Vivien Ingrams.jpg';
+import heroImage from '../images/portfolio/portfolio-12.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
