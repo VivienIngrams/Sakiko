@@ -96,34 +96,34 @@ export interface TimelineItem {
 /**
  * Testimonial section
  */
-export interface TestimonialSection {
-  imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
-}
+// export interface TestimonialSection {
+//   imageSrc?: string | StaticImageData;
+//   testimonials: Testimonial[];
+// }
 
-export interface Testimonial {
-  image?: string;
-  name: string;
-  text: string;
-}
+// export interface Testimonial {
+//   image?: string;
+//   name: string;
+//   text: string;
+// }
 
 /**
  * Contact section
  */
-export interface ContactSection {
-  headerText?: string;
-  description: string;
-  items: ContactItem[];
-}
+// export interface ContactSection {
+//   headerText?: string;
+//   description: string;
+//   items: ContactItem[];
+// }
 
 export const ContactType = {
   Email: 'Email',
   Phone: 'Phone',
   Location: 'Location',
-  Github: 'Github',
-  LinkedIn: 'LinkedIn',
-  Facebook: 'Facebook',
-  Twitter: 'Twitter',
+  // Github: 'Github',
+  // LinkedIn: 'LinkedIn',
+  // Facebook: 'Facebook',
+  // Twitter: 'Twitter',
   Instagram: 'Instagram',
 } as const;
 
