@@ -1,19 +1,8 @@
 import {
-  AcademicCapIcon,
-  CalendarIcon,
   DownloadIcon,
-  FlagIcon,
-  MapIcon,
-  OfficeBuildingIcon,
-  SparklesIcon,
 } from '@heroicons/react/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,7 +14,8 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/Sakiko/book.jpg';
+import heroImage from '../images/Sakiko/Photo de Vivien Ingrams.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -44,8 +34,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Sakiko Oishi',
+  description: "Sakiko Oishi, dancer and model portfolio site",
 };
 
 /**
@@ -69,25 +59,19 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Sakiko Oishi`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+     Dancer and model
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+    
     </>
   ),
   actions: [
     {
       href: '/assets/resume.pdf',
-      text: 'Resume',
+      text: 'CV',
       primary: true,
       Icon: DownloadIcon,
     },
@@ -104,16 +88,20 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `
+I am a professional dancer and model working freelance in France. Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and began my dancing career in projects with the Ballet national de Marseille and the Ballet d'Europe. As a permanent dancer over ten years with the CCN Ballet de Lorraine I created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez, ... I also performed in many of the world's main theatres in major repertory pieces by choreographers such as Twyla tharp, William Forsythe, Trisha Brown, Merce Cunningham, Martha Graham... As a freelancer I have modelled for  Hermes and Heineken advertisement campaigns and also  danced in new creations with the CCN de Caen, la Bazooka, compagnie sine qua non art....`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Nationality', text: 'Japanese'},
+    {label: 'Date of Birth', text: '18th June 1989'},
+    {label: 'Height', text: '160cm'},
+    {label: 'Weight', text: '47kg'},
+    {label: 'Bust', text: '80cm'},
+    {label: 'Waist', text: '60cm'},
+    {label: 'Hip', text: '85cm'},
+    {label: 'Dress', text: '36'},
+    {label: 'Shoe', text: '37'},
+    {label: 'Hair', text: 'Dark brown'},
+    {label: 'Eyes', text: 'Brown'},
   ],
 };
 
@@ -365,9 +353,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
