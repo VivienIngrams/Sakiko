@@ -4,6 +4,7 @@ import {
 
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import profilepic from '../images/portfolio/book.jpg';
+import bookImage from '../images/portfolio/book(1).jpg';
 import heroImage from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -25,12 +26,12 @@ import porfolioImage1 from '../images/portfolio/portfolio-18.jpg';
 // import testimonialImage from '../images/testimonial.webp';
 import {
   About,
-  ContactSection,
+  // ContactSection,
   ContactType,
   Hero,
   HomepageMeta,
   PortfolioItem,
-  SkillGroup,
+  // SkillGroup,
   Social,
   // TestimonialSection,
   TimelineItem,
@@ -94,6 +95,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
+  bookImageSrc: bookImage,
   description: `
 I am a professional dancer and model working freelance in France. Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and began my dancing career in projects with the Ballet national de Marseille and the Ballet d'Europe. As a permanent dancer over ten years with the CCN Ballet de Lorraine I created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez, ... I also performed in many of the world's main theatres in major repertory pieces by choreographers such as Twyla tharp, William Forsythe, Trisha Brown, Merce Cunningham, Martha Graham... As a freelancer I have modelled for  Hermes and Heineken advertisement campaigns and also  danced in new creations with the CCN de Caen, la Bazooka, compagnie sine qua non art....`,
   aboutItems: [
@@ -113,77 +115,77 @@ I am a professional dancer and model working freelance in France. Born in Japan,
 
 /**
  * Skills section
- */
-export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
-];
+//  */
+// export const skills: SkillGroup[] = [
+//   {
+//     name: 'Spoken languages',
+//     skills: [
+//       {
+//         name: 'English',
+//         level: 10,
+//       },
+//       {
+//         name: 'French',
+//         level: 4,
+//       },
+//       {
+//         name: 'Spanish',
+//         level: 3,
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Frontend development',
+//     skills: [
+//       {
+//         name: 'React',
+//         level: 9,
+//       },
+//       {
+//         name: 'Typescript',
+//         level: 7,
+//       },
+//       {
+//         name: 'GraphQL',
+//         level: 6,
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Backend development',
+//     skills: [
+//       {
+//         name: 'Node.js',
+//         level: 8,
+//       },
+//       {
+//         name: 'Rust',
+//         level: 5,
+//       },
+//       {
+//         name: 'Golang',
+//         level: 4,
+//       },
+//     ],
+//   },
+//   {
+//     name: 'Mobile development',
+//     skills: [
+//       {
+//         name: 'React Native',
+//         level: 9,
+//       },
+//       {
+//         name: 'Flutter',
+//         level: 4,
+//       },
+//       {
+//         name: 'Swift',
+//         level: 3,
+//       },
+//     ],
+//   },
+// ];
 
 /**
  * Portfolio section

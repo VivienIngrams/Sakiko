@@ -6,7 +6,7 @@ import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
-  const {profileImageSrc, description, aboutItems} = aboutData;
+  const {profileImageSrc, bookImageSrc, description, aboutItems} = aboutData;
   return (
     <Section className="bg-neutral-1000" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
@@ -23,7 +23,7 @@ const About: FC = memo(() => {
           </div>
         )}
           <h2 className="text-2xl font-bold text-white text-center">Book</h2>
-          <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 text-center">
+          <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {aboutItems.map(({label, text, Icon}, idx) => (
               <li className="col-span-1 flex  items-start gap-x-2" key={idx}>
                 {Icon && <Icon className="h-5 w-5 text-white" />}
@@ -35,7 +35,7 @@ const About: FC = memo(() => {
           {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
             <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-32 md:w-32">
-              <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc} />
+              <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImageSrc} />
             </div>
           </div>
         )}

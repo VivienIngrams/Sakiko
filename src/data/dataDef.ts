@@ -39,6 +39,7 @@ interface HeroActionItem {
  */
 export interface About {
   profileImageSrc?: string;
+  bookImageSrc: string;
   description: string;
   aboutItems: AboutItem[];
 }
