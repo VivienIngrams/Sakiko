@@ -116,7 +116,6 @@ I am a professional dancer and model working freelance in France. Born in Japan,
   bookImage1: porfolioImage18,
   bookImage2: porfolioImage20,
   bookImage3: porfolioImage21,
-
 };
 
 /**
@@ -234,6 +233,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage12,
   },
   {
+    image: porfolioImage19,
+  },
+
+  {
     image: porfolioImage13,
   },
   {
@@ -248,21 +251,11 @@ export const portfolioItems: PortfolioItem[] = [
   {
     image: porfolioImage5,
   },
-  {
-    image: porfolioImage19,
-  },
-  {
-    image: porfolioImage20,
-  },
-  {
-    image: porfolioImage21,
-  },
+
   {
     image: porfolioImage22,
   },
-  // {
-  //   image: porfolioImage18,
-  // },
+
   {
     image: porfolioImage23,
   },

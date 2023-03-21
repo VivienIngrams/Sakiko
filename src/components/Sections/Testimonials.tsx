@@ -26,7 +26,7 @@ const Testimonials: FC = memo(() => {
               </li>
             ))}
           </ul>
-          <div className='flex'>
+          <div className='flex flex-wrap justify-center'>
           {!!profileImageSrc && (
           <div className="col-span-1 m-5 flex justify-center md:justify-start">
             <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-50 md:w-32">
