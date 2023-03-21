@@ -29,6 +29,10 @@ module.exports = {
         touch: {raw: 'only screen and (pointer: coarse)'},
       },
     },
+    fontFamily: {
+      khand: ['"Khand"', 'sans-serif'],
+      openSans: ['Open Sans', 'sans-serif'],
+    },
   },
   // eslint-disable-next-line no-undef
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
