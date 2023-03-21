@@ -51,12 +51,12 @@ export const homePageMeta: HomepageMeta = {
 export const SectionId = {
   Hero: 'hero',
   About: 'about',
-  Contact: 'contact',
-  Portfolio: 'portfolio',
-  Resume: 'resume',
+  // Contact: 'contact',
+  Portfolio: 'Photo Gallery',
+  Resume: 'CV',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Testimonials: 'Book',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -82,11 +82,11 @@ export const heroData: Hero = {
       primary: true,
       Icon: DownloadIcon,
     },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    // {
+    //   href: `#${SectionId.Contact}`,
+    //   text: 'Contact',
+    //   primary: false,
+    // },
   ],
 };
 
