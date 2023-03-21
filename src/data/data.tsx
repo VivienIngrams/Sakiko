@@ -23,17 +23,17 @@ import porfolioImage15 from '../images/portfolio/portfolio-15.jpg';
 import porfolioImage16 from '../images/portfolio/portfolio-16.jpg';
 import porfolioImage17 from '../images/portfolio/portfolio-17.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-18.jpg';
-// import testimonialImage from '../images/testimonial.webp';
+import testimonialImage from '../images/testimonial.webp';
 import {
   About,
-  // ContactSection,
+  ContactSection,
   ContactType,
   Hero,
   HomepageMeta,
   PortfolioItem,
-  // SkillGroup,
+  SkillGroup,
   Social,
-  // TestimonialSection,
+  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -116,76 +116,76 @@ I am a professional dancer and model working freelance in France. Born in Japan,
 /**
  * Skills section
 //  */
-// export const skills: SkillGroup[] = [
-//   {
-//     name: 'Spoken languages',
-//     skills: [
-//       {
-//         name: 'English',
-//         level: 10,
-//       },
-//       {
-//         name: 'French',
-//         level: 4,
-//       },
-//       {
-//         name: 'Spanish',
-//         level: 3,
-//       },
-//     ],
-//   },
-//   {
-//     name: 'Frontend development',
-//     skills: [
-//       {
-//         name: 'React',
-//         level: 9,
-//       },
-//       {
-//         name: 'Typescript',
-//         level: 7,
-//       },
-//       {
-//         name: 'GraphQL',
-//         level: 6,
-//       },
-//     ],
-//   },
-//   {
-//     name: 'Backend development',
-//     skills: [
-//       {
-//         name: 'Node.js',
-//         level: 8,
-//       },
-//       {
-//         name: 'Rust',
-//         level: 5,
-//       },
-//       {
-//         name: 'Golang',
-//         level: 4,
-//       },
-//     ],
-//   },
-//   {
-//     name: 'Mobile development',
-//     skills: [
-//       {
-//         name: 'React Native',
-//         level: 9,
-//       },
-//       {
-//         name: 'Flutter',
-//         level: 4,
-//       },
-//       {
-//         name: 'Swift',
-//         level: 3,
-//       },
-//     ],
-//   },
-// ];
+export const skills: SkillGroup[] = [
+  {
+    name: 'Spoken languages',
+    skills: [
+      {
+        name: 'English',
+        level: 10,
+      },
+      {
+        name: 'French',
+        level: 4,
+      },
+      {
+        name: 'Spanish',
+        level: 3,
+      },
+    ],
+  },
+  {
+    name: 'Frontend development',
+    skills: [
+      {
+        name: 'React',
+        level: 9,
+      },
+      {
+        name: 'Typescript',
+        level: 7,
+      },
+      {
+        name: 'GraphQL',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Backend development',
+    skills: [
+      {
+        name: 'Node.js',
+        level: 8,
+      },
+      {
+        name: 'Rust',
+        level: 5,
+      },
+      {
+        name: 'Golang',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Mobile development',
+    skills: [
+      {
+        name: 'React Native',
+        level: 9,
+      },
+      {
+        name: 'Flutter',
+        level: 4,
+      },
+      {
+        name: 'Swift',
+        level: 3,
+      },
+    ],
+  },
+];
 
 /**
  * Portfolio section
@@ -341,26 +341,26 @@ export const experience: TimelineItem[] = [
 /**
  * Testimonial section
 //  */
-// export const testimonial: TestimonialSection = {
-//   imageSrc: testimonialImage,
-//   testimonials: [
-//     {
-//       name: 'John Doe',
-//       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-//     },
-//     {
-//       name: 'Jane Doe',
-//       text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-//     },
-//     {
-//       name: 'Someone else',
-//       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-//       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-//     },
-//   ],
-// };
+export const testimonial: TestimonialSection = {
+  imageSrc: testimonialImage,
+  testimonials: [
+    {
+      name: 'John Doe',
+      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+    },
+    {
+      name: 'Jane Doe',
+      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+    },
+    {
+      name: 'Someone else',
+      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    },
+  ],
+};
 
 /**
  * Contact section
@@ -385,11 +385,11 @@ export const contact: ContactSection = {
       text: '@tbakerx',
       href: 'https://www.instagram.com/tbakerx/',
     },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
-    },
+    // {
+    //   type: ContactType.Github,
+    //   text: 'tbakerx',
+    //   href: 'https://github.com/tbakerx',
+    // },
   ],
 };
 
