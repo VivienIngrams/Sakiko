@@ -154,14 +154,8 @@ const Testimonials: FC = memo(() => {
         <div className={classNames('col-span-1 flex flex-col items-center gap-y-6', {'md:col-span-4': !!profileImageSrc})}>
           <div className="flex flex-col items-center gap-y-2">
             </div>
-        {!!profileImageSrc && (
-          <div className="col-span-1 flex justify-center md:justify-start">
-            <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-32 md:w-32">
-              <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc} />
-            </div>
-          </div>
-        )}
-          <h2 className="text-2xl font-bold text-white text-center">Book</h2>
+            <h2 className="text-2xl font-bold text-white text-center">Book</h2>
+       
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 ">
             {aboutItems.map(({label, text, Icon}, idx) => (
               <li className="col-span-1 flex justify-center gap-x-2" key={idx}>
