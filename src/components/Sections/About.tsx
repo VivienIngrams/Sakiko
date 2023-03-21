@@ -12,8 +12,8 @@ const About: FC = memo(() => {
   return (
     <Section className="bg-orange-900" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
-        <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>
-          <div className="flex flex-col gap-y-2">
+        <div className={classNames('col-span-1 flex flex-col items-center gap-y-6', {'md:col-span-4': !!profileImageSrc})}>
+          <div className="flex flex-col items-center gap-y-2">
             <h2 className="text-2xl font-bold text-white text-center">About me</h2>
             <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
             <div className="flex w-full justify-center gap-x-4">
