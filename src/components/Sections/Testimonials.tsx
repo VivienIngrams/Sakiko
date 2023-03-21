@@ -8,7 +8,7 @@ import Section from '../Layout/Section';
 
 
 const Testimonials: FC = memo(() => {
-  const {profileImageSrc, bookImageSrc, aboutItems} = aboutData;
+  const {profileImageSrc, bookImageSrc, aboutItems, bookImage1, bookImage2, bookImage3} = aboutData;
   return (
     <Section className="bg-orange-900" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
@@ -26,14 +26,28 @@ const Testimonials: FC = memo(() => {
               </li>
             ))}
           </ul>
+          <div className='flex'>
           {!!profileImageSrc && (
-          <div className="col-span-1 flex justify-center md:justify-start">
-            <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-32 md:w-32">
-              <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImageSrc} />
+          <div className="col-span-1 m-5 flex justify-center md:justify-start">
+            <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-50 md:w-32">
+              <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage1} />
             </div>
           </div>
         )}
-        </div>
+        {!!profileImageSrc && (
+          <div className="col-span-1 m-5 flex justify-center md:justify-start">
+            <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-50 md:w-32">
+              <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage2} />
+            </div>
+          </div>
+        )}
+{!!profileImageSrc && (
+          <div className="col-span-1 m-5 flex justify-center md:justify-start">
+            <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-50 md:w-32">
+              <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage3} />
+            </div>
+          </div>
+        )}     </div>   </div>
       </div>
     </Section>
   );

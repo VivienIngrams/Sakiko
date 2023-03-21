@@ -42,6 +42,9 @@ export interface About {
   bookImageSrc: string;
   description: string;
   aboutItems: AboutItem[];
+  bookImage1: string;
+  bookImage2: string;
+  bookImage3: string;
 }
 
 export interface AboutItem {
