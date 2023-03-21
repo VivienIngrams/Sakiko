@@ -188,106 +188,55 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    image: porfolioImage17,
+  },
+  {
+    image: porfolioImage6,
+  },
+  {
+    image: porfolioImage4,
+  },
+  {
+    image: porfolioImage8,
+  },
+  {
+    image: porfolioImage9,
+  },
+  {
+    image: porfolioImage7,
+  },
+  {
     image: porfolioImage11,
   },
   {
-    title: 'Project title 12',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage12,
   },
   {
-    title: 'Project title 13',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage13,
   },
   {
-    title: 'Project title 14',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage14,
   },
   {
-    title: 'Project title 15',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage15,
   },
   {
-    title: 'Project title 16',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
     image: porfolioImage16,
   },
   {
-    title: 'Project title 17',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage17,
+    image: porfolioImage5,
   },
 ];
 
