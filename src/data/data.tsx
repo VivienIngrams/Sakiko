@@ -4,6 +4,12 @@ import {DownloadIcon} from '@heroicons/react/outline';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import profilepic from '../images/portfolio/book.jpg';
 import bookImage from '../images/portfolio/book(1).jpg';
+import porfolioImage18 from '../images/portfolio/book(2).jpg';
+import porfolioImage19 from '../images/portfolio/kikk.jpg';
+import porfolioImage22 from '../images/portfolio/kiko.jpg';
+import porfolioImage20 from '../images/portfolio/model.jpg';
+import porfolioImage21 from '../images/portfolio/model_.jpg';
+import porfolioImage23 from '../images/portfolio/Photo de Sakiko.jpg';
 import heroImage from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -22,12 +28,6 @@ import porfolioImage15 from '../images/portfolio/portfolio-15.jpg';
 import porfolioImage16 from '../images/portfolio/portfolio-16.jpg';
 import porfolioImage17 from '../images/portfolio/portfolio-17.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-18.jpg';
-import porfolioImage18 from '../images/portfolio/book(2).jpg';
-import porfolioImage19 from '../images/portfolio/kikk.jpg';
-import porfolioImage20 from '../images/portfolio/model.jpg';
-import porfolioImage21 from '../images/portfolio/model_.jpg';
-import porfolioImage22 from '../images/portfolio/kiko.jpg';
-import porfolioImage23 from '../images/portfolio/Photo of Sakiko.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -258,6 +258,9 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     image: porfolioImage18,
+  },
+  {
+    image: porfolioImage23,
   },
 ];
 
