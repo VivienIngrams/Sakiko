@@ -1,6 +1,4 @@
-import {
-  DownloadIcon,
-} from '@heroicons/react/outline';
+import {DownloadIcon} from '@heroicons/react/outline';
 
 // import pdf from '../assets/resume.pdf';
 import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -43,7 +41,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Sakiko Oishi',
-  description: "Sakiko Oishi, dancer and model portfolio site",
+  description: 'Sakiko Oishi, dancer and model portfolio site',
 };
 
 /**
@@ -70,10 +68,7 @@ export const heroData: Hero = {
   name: `Sakiko Oishi`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-     Dancer and model
-      </p>
-    
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer and model</p>
     </>
   ),
   actions: [
@@ -98,7 +93,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   bookImageSrc: bookImage,
   description: `
-I am a professional dancer and model working freelance in France. Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and began my dancing career in projects with the Ballet national de Marseille and the Ballet d'Europe. As a permanent dancer over ten years with the CCN Ballet de Lorraine I created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez, ... I also performed in many of the world's main theatres in major repertory pieces by choreographers such as Twyla tharp, William Forsythe, Trisha Brown, Merce Cunningham, Martha Graham... As a freelancer I have modelled for  Hermes and Heineken advertisement campaigns and also  danced in new creations with the CCN de Caen, la Bazooka, compagnie sine qua non art....`,
+I am a professional dancer and model working freelance in France. Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and began my dancing career in projects with the Ballet national de Marseille and the Ballet d'Europe. As a permanent dancer over ten years with the CCN Ballet de Lorraine I created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez, ... I also performed in many of the world's main theatres in major repertory pieces by choreographers such as Twyla tharp, William Forsythe, Trisha Brown, Merce Cunningham, Martha Graham... As a freelancer I have modelled for  Hermes and Heineken advertisement campaigns and also  danced in new creations with the CCN de Caen, la Bazooka, Compagnie Sine Qua Non Art....`,
   aboutItems: [
     {label: 'Nationality', text: 'Japanese'},
     {label: 'Date of Birth', text: '18th June 1989'},
@@ -302,11 +297,10 @@ export const portfolioItems: PortfolioItem[] = [
 export const education: TimelineItem[] = [
   {
     date: '2006',
-    location: "France",
+    location: 'France',
     title: "L'Ecole Nationale Supérieure de Danse de Marseille",
     content: <p></p>,
   },
-
 ];
 
 export const experience: TimelineItem[] = [
@@ -314,86 +308,67 @@ export const experience: TimelineItem[] = [
     date: '2022 - Present',
     location: 'Danseuse freelance',
     title: 'CCN de Caen',
-    content: (
-      <p>
-        Nom de la pièce
-      </p>
-    ),
+    content: <p>Nom de la pièce</p>,
   },
   {
     date: '2021 - Present',
     location: 'Danseuse freelance',
     title: 'Compagnie Sine Qua Non Art',
-    content: (
-      <p>
-        Nom de la pièce
-      </p>
-    ),
-  },  {
+    content: <p>Nom de la pièce</p>,
+  },
+  {
     date: '2020 - Present',
     location: 'Danseuse freelance',
     title: 'Compagnie La Bazooka',
-    content: (
-      <p>
-        Nom de la pièce
-      </p>
-    ),
+    content: <p>Nom de la pièce</p>,
   },
 
   {
     date: 'March 2008 - February 2019',
     location: 'Artiste Chorégraphique',
-    title: "CCN Ballet de Lorraine",
+    title: 'CCN Ballet de Lorraine',
     content: (
-      <p>
-         « Opal Loop/Cloud installation #72503 »choreography : Trisha Brown
-« Shaker Loops » choreography : Andonis Foniadakis
-« Murmuration » : Rachid Ouramdane
-« ELEMENTEN l - Room » : Cindy Van Aker
-« Objets re-trouvés » Mathilde Monnier
-« Transposition #1,2 » : Emanuel Gat
-« Vertiginous»,« The Ville Parody of Address »: William Forsythe
-« Fabrication » « Sounddance » « Rain Forest » « Duets »: Merce Cunningham
-« In The Upper Room » « Nine Sinatra Songs »: Twyla tharp
-« Sketches from Chronicle » : Martha Graham
-« Devoted » : Cecilia Bengolea and François Chaignaud
-« Cela nous concerne tous » : Miguel Gutierrez
-« HOK solo pour ensemble » : Alban Richard
-« Record of ancient things » : Petter Jacobsson et Thomas Caley
-« Corps De Ballet » : Noé Soulier
-« Hedda » : Ingun Bjornsgaard
-« Showroomdummises #3 » : Gisele Vienne
-« Mariage » : Tero Saarinen
-« Le sacre du printemps » : Ginette Laurin
-« Rave » : Karole Armitage
-« Petrouchka » : Michel Fokine
-« Les noces » : Bronislava Nijinska
-« Tragic love » : Steven Petronio
-« Hymnen » : Didier Deschamps et Lia Rodriguez
-« Organic beat » : Paolo Ribeiro
-« L’après-midi d’un faune » : Michel Fokine
-      </p>
+      <div>
+        <p>« Opal Loop/Cloud installation #72503 »: Trisha Brown</p>
+        <p>« Shaker Loops » : Andonis Foniadakis</p>
+        <p>« Murmuration » : Rachid Ouramdane</p>
+        <p>« ELEMENTEN l - Room » : Cindy Van Aker</p>
+        <p>« Objets re-trouvés » Mathilde Monnier</p>
+        <p>« Transposition #1,2 » : Emanuel Gat</p>
+        <p>« Vertiginous»,« The Ville Parody of Address »: William Forsythe</p>
+        <p>« Fabrication » « Sounddance » « Rain Forest » « Duets »: Merce Cunningham</p>
+        <p>« In The Upper Room » « Nine Sinatra Songs »: Twyla tharp</p>
+        <p>« Sketches from Chronicle » : Martha Graham</p>
+        <p>« Devoted » : Cecilia Bengolea and François Chaignaud</p>
+        <p>« Cela nous concerne tous » : Miguel Gutierrez</p>
+        <p>« HOK solo pour ensemble » : Alban Richard</p>
+        <p>« Record of ancient things » : Petter Jacobsson et Thomas Caley</p>
+        <p>« Corps De Ballet » : Noé Soulier</p>
+        <p>« Hedda » : Ingun Bjornsgaard</p>
+        <p>« Showroomdummises #3 » : Gisele Vienne</p>
+        <p>« Mariage » : Tero Saarinen</p>
+        <p> « Le sacre du printemps » : Ginette Laurin</p>
+        <p>« Rave » : Karole Armitage</p>
+        <p> « Petrouchka » : Michel Fokine</p>
+        <p> « Les noces » : Bronislava Nijinska </p>
+        <p> « Tragic love » : Steven Petronio</p>
+        <p> « Hymnen » : Didier Deschamps et Lia Rodriguez</p>
+        <p> « Organic beat » : Paolo Ribeiro</p>
+        <p> « L’après-midi d’un faune » : Michel Fokine</p>
+      </div>
     ),
   },
   {
     date: '2008',
     location: 'Danseuse supplémentaire',
     title: "Ballet d'Europe",
-    content: (
-      <p>
-        Mireille
-      </p>
-    ),
+    content: <p>Mireille</p>,
   },
   {
     date: '2007',
     location: 'Danseuse stagiaire',
-    title: "Ballet National de Marseille",
-    content: (
-      <p>
-        Concerto Barocco
-      </p>
-    ),
+    title: 'Ballet National de Marseille',
+    content: <p>Concerto Barocco</p>,
   },
 ];
 
