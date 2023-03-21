@@ -2,6 +2,7 @@ import {
   DownloadIcon,
 } from '@heroicons/react/outline';
 
+// import pdf from '../assets/resume.pdf';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import profilepic from '../images/portfolio/book.jpg';
 import bookImage from '../images/portfolio/book(1).jpg';
