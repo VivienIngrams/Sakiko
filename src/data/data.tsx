@@ -310,24 +310,87 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2022 - Present',
+    location: 'Danseuse freelance',
+    title: 'CCN de Caen',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Nom de la pièce
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2021 - Present',
+    location: 'Danseuse freelance',
+    title: 'Compagnie Sine Qua Non Art',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Nom de la pièce
+      </p>
+    ),
+  },  {
+    date: '2020 - Present',
+    location: 'Danseuse freelance',
+    title: 'Compagnie La Bazooka',
+    content: (
+      <p>
+        Nom de la pièce
+      </p>
+    ),
+  },
+
+  {
+    date: 'March 2008 - February 2019',
+    location: 'Artiste Chorégraphique',
+    title: "CCN Ballet de Lorraine",
+    content: (
+      <p>
+         « Opal Loop/Cloud installation #72503 »choreography : Trisha Brown
+« Shaker Loops » choreography : Andonis Foniadakis
+« Murmuration » : Rachid Ouramdane
+« ELEMENTEN l - Room » : Cindy Van Aker
+« Objets re-trouvés » Mathilde Monnier
+« Transposition #1,2 » : Emanuel Gat
+« Vertiginous»,« The Ville Parody of Address »: William Forsythe
+« Fabrication » « Sounddance » « Rain Forest » « Duets »: Merce Cunningham
+« In The Upper Room » « Nine Sinatra Songs »: Twyla tharp
+« Sketches from Chronicle » : Martha Graham
+« Devoted » : Cecilia Bengolea and François Chaignaud
+« Cela nous concerne tous » : Miguel Gutierrez
+« HOK solo pour ensemble » : Alban Richard
+« Record of ancient things » : Petter Jacobsson et Thomas Caley
+« Corps De Ballet » : Noé Soulier
+« Hedda » : Ingun Bjornsgaard
+« Showroomdummises #3 » : Gisele Vienne
+« Mariage » : Tero Saarinen
+« Le sacre du printemps » : Ginette Laurin
+« Rave » : Karole Armitage
+« Petrouchka » : Michel Fokine
+« Les noces » : Bronislava Nijinska
+« Tragic love » : Steven Petronio
+« Hymnen » : Didier Deschamps et Lia Rodriguez
+« Organic beat » : Paolo Ribeiro
+« L’après-midi d’un faune » : Michel Fokine
+      </p>
+    ),
+  },
+  {
+    date: '2008',
+    location: 'Danseuse supplémentaire',
+    title: "Ballet d'Europe",
+    content: (
+      <p>
+        Mireille
+      </p>
+    ),
+  },
+  {
+    date: '2007',
+    location: 'Danseuse stagiaire',
+    title: "Ballet National de Marseille",
+    content: (
+      <p>
+        Concerto Barocco
       </p>
     ),
   },
