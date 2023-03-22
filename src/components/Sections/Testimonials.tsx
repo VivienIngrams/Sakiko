@@ -8,7 +8,7 @@ import Section from '../Layout/Section';
 
 
 const Testimonials: FC = memo(() => {
-  const {profileImageSrc, bookImageSrc, aboutItems, bookImage1, bookImage2, bookImage3} = aboutData;
+  const {profileImageSrc,  aboutItems, bookImage1, bookImage2, bookImage3} = aboutData;
   return (
     <Section className="bg-orange-900" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>

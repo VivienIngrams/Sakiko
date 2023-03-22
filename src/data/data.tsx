@@ -195,28 +195,21 @@ export const skills: SkillGroup[] = [
 /**
  * Portfolio section
  */
-export const portfolioItems: PortfolioItem[] = [
-  {
-    image: porfolioImage1,
-  },
+export const portfolioItemsDance: PortfolioItem[] = [
   {
     image: porfolioImage3,
   },
   {
     image: porfolioImage10,
   },
-  {
-    image: porfolioImage2,
-  },
+
   {
     image: porfolioImage6,
   },
   {
     image: porfolioImage4,
   },
-  {
-    image: porfolioImage17,
-  },
+
   {
     image: porfolioImage8,
   },
@@ -226,14 +219,24 @@ export const portfolioItems: PortfolioItem[] = [
   {
     image: porfolioImage7,
   },
+
+  {
+    image: porfolioImage16,
+  },
+  {
+    image: porfolioImage5,
+  },
+];
+export const portfolioItemsModel: PortfolioItem[] = [
+  {
+    image: porfolioImage2,
+  },
+
   {
     image: porfolioImage11,
   },
   {
     image: porfolioImage12,
-  },
-  {
-    image: porfolioImage19,
   },
 
   {
@@ -245,19 +248,24 @@ export const portfolioItems: PortfolioItem[] = [
   {
     image: porfolioImage15,
   },
-  {
-    image: porfolioImage16,
-  },
-  {
-    image: porfolioImage5,
-  },
-
-  {
-    image: porfolioImage22,
-  },
 
   {
     image: porfolioImage23,
+  },
+];
+export const portfolioItemsHands: PortfolioItem[] = [
+  {
+    image: porfolioImage1,
+  },
+  {
+    image: porfolioImage17,
+  },
+
+  {
+    image: porfolioImage19,
+  },
+  {
+    image: porfolioImage22,
   },
 ];
 
