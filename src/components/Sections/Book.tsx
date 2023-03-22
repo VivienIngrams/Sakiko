@@ -7,7 +7,7 @@ import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 
-const Testimonials: FC = memo(() => {
+const Book: FC = memo(() => {
   const {profileImageSrc,  aboutItems, bookImage1, bookImage2, bookImage3} = aboutData;
   return (
     <Section className="bg-orange-900" sectionId={SectionId.About}>
@@ -53,5 +53,5 @@ const Testimonials: FC = memo(() => {
   );
 });
 
-Testimonials.displayName = 'Book';
-export default Testimonials;
+Book.displayName = 'Book';
+export default Book;
