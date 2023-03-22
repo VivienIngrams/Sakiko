@@ -98,9 +98,8 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   bookImageSrc: bookImage,
-  description: `
-I am a professional dancer and model working freelance in France. Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and began my dancing career in projects with the Ballet national de Marseille and the Ballet d'Europe. As a permanent dancer over ten years with the CCN Ballet de Lorraine I created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez, ... I also performed in many of the world's main theatres in major repertory pieces by choreographers such as Twyla tharp, William Forsythe, Trisha Brown, Merce Cunningham, Martha Graham... As a freelancer I have modelled for  Hermes and Heineken advertisement campaigns and also  danced in new creations with the CCN de Caen, la Bazooka, Compagnie Sine Qua Non Art....`,
-  aboutItems: [
+  description: `I am a professional freelance dancer and model. I have created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez and Mathilde Monnier and performed repertory by Twyla tharp, William Forsythe, Trisha Brown, Merce Cunningham and Martha Graham.`,
+  description2: `Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and went on to dance with the CCN Ballet de Lorraine, Ballet national de Marseille, Ballet d'Europe, CCN de Caen, la Bazooka, Compagnie Sine Qua Non Art and model for Hermes and Heineken advertisement campaigns.`,  aboutItems: [
     {label: 'Nationality', text: 'Japanese'},
     {label: 'Date of Birth', text: '18th June 1989'},
     {label: 'Height', text: '160cm'},

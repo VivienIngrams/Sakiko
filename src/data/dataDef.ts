@@ -41,6 +41,7 @@ export interface About {
   profileImageSrc?: string;
   bookImageSrc: string;
   description: string;
+  description2: string;
   aboutItems: AboutItem[];
   bookImage1: string;
   bookImage2: string;
