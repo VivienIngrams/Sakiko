@@ -14,10 +14,10 @@ const Footer: FC = memo(() => (
       </a>
     </div>
     <div className="flex flex-col items-center gap-y-6">
-      <div className="flex gap-x-4 text-neutral-500">
+      <div className="flex gap-x-4 text-neutral-300">
         <Socials />
       </div>
-      <span className="text-sm text-neutral-700">sakiko_oishi@yahoo.com</span>
+      <span className="text-sm text-neutral-400">sakiko_oishi@yahoo.com</span>
     </div>
   </div>
 ));
