@@ -63,20 +63,6 @@ export interface Stat {
   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }
 
-/**
- * Skills section
- */
-
-export interface Skill {
-  name: string;
-  level: number;
-  max?: number;
-}
-
-export interface SkillGroup {
-  name: string;
-  skills: Skill[];
-}
 
 /**
  * Portfolio section
@@ -125,10 +111,7 @@ export const ContactType = {
   Email: 'Email',
   Phone: 'Phone',
   Location: 'Location',
-  // Github: 'Github',
-  // LinkedIn: 'LinkedIn',
-  // Facebook: 'Facebook',
-  // Twitter: 'Twitter',
+
   Instagram: 'Instagram',
 } as const;
 

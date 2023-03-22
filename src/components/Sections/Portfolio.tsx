@@ -5,7 +5,7 @@ import Image from 'next/image';
 import {FC, memo} from 'react';
 
 // import {isMobile} from '../../config';
-import {portfolioItemsDance, portfolioItemsModel, portfolioItemsHands,  SectionId} from '../../data/data';
+import {portfolioItemsDance, portfolioItemsHands,  portfolioItemsModel, SectionId} from '../../data/data';
 // import {PortfolioItem} from '../../data/dataDef';
 // import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';

@@ -36,7 +36,7 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
-  SkillGroup,
+  // SkillGroup,
   Social,
   TestimonialSection,
   TimelineItem,
@@ -59,7 +59,7 @@ export const SectionId = {
   // Contact: 'contact',
   Portfolio: 'Photo Gallery',
   Resume: 'CV',
-  Skills: 'skills',
+  // Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'Book',
 } as const;
@@ -116,80 +116,6 @@ export const aboutData: About = {
   bookImage2: porfolioImage20,
   bookImage3: porfolioImage21,
 };
-
-/**
- * Skills section
-//  */
-export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
-];
 
 /**
  * Portfolio section
@@ -396,11 +322,7 @@ export const contact: ContactSection = {
       text: '@tbakerx',
       href: 'https://www.instagram.com/tbakerx/',
     },
-    // {
-    //   type: ContactType.Github,
-    //   text: 'tbakerx',
-    //   href: 'https://github.com/tbakerx',
-    // },
+
   ],
 };
 
