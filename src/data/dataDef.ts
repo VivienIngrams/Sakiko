@@ -68,9 +68,6 @@ export interface Stat {
  * Portfolio section
  */
 export interface PortfolioItem {
-  // title: string;
-  // description: string;
-  // url: string;
   image: string | StaticImageData;
 }
 
@@ -83,20 +80,6 @@ export interface TimelineItem {
   title: string;
   content: JSX.Element;
 }
-
-/**
- * Testimonial section
- */
-// export interface TestimonialSection {
-//   imageSrc?: string | StaticImageData;
-//   testimonials: Testimonial[];
-// }
-
-// export interface Testimonial {
-//   image?: string;
-//   name: string;
-//   text: string;
-// }
 
 /**
  * Contact section
