@@ -165,9 +165,9 @@ export const portfolioItemsModel: PortfolioItem[] = [
     image: porfolioImage15,
   },
 
-  {
-    image: porfolioImage23,
-  },
+  // {
+  //   image: porfolioImage23,
+  // },
 ];
 export const portfolioItemsHands: PortfolioItem[] = [
   {
