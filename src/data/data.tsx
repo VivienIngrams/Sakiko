@@ -9,7 +9,7 @@ import porfolioImage19 from '../images/portfolio/kikk.jpg';
 import porfolioImage22 from '../images/portfolio/kiko.jpg';
 import porfolioImage20 from '../images/portfolio/model.jpg';
 import porfolioImage21 from '../images/portfolio/model_.jpg';
-import porfolioImage23 from '../images/portfolio/Photo de Sakiko.jpg';
+// import porfolioImage23 from '../images/portfolio/Photo de Sakiko.jpg';
 import heroImage from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
