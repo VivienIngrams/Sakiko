@@ -10,7 +10,7 @@ const {actions} = heroData;
 const About: FC = memo(() => {
   const {profileImageSrc, bookImageSrc, description, description2} = aboutData;
   return (
-    <Section className="bg-orange-900" sectionId={SectionId.About}>
+    <Section className="bg-red-900" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         <div
           className={classNames('col-span-1 flex flex-col items-center gap-y-6', {'md:col-span-4': !!profileImageSrc})}>
