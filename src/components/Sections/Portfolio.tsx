@@ -13,7 +13,7 @@ import Section from '../Layout/Section';
 const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-1000" sectionId={SectionId.Portfolio}>
-      <div className="flex flex-col gap-y-8">
+      <div className="flex flex-col mb-20 gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Dancer</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItemsDance.map((item, index) => {
@@ -32,7 +32,7 @@ const Portfolio: FC = memo(() => {
           })}
         </div>
       </div>
-      <div className="flex flex-col gap-y-8">
+      <div className="flex flex-col mb-20 gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Model</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItemsModel.map((item, index) => {
@@ -50,7 +50,7 @@ const Portfolio: FC = memo(() => {
             );
           })}
         </div>
-      </div> <div className="flex flex-col gap-y-8">
+      </div> <div className="flex flex-col mb-20 gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Hands</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItemsHands.map((item, index) => {

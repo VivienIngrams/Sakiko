@@ -3,6 +3,21 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,css,scss}'],
   // darkMode: 'media', // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'khand': ['Khand', 'sans-serif'],
+      'urban': ['Urbanist', 'ui_sans_serif', 'system-ui'],
+      'antonio': ['Antonio', 'ui_sans_serif', 'system-ui']
+    },
+    fontWeight: {
+      thin: '100',
+      extralight: '200',
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      extrabold: '800',
+    },
     extend: {
       keyframes: {
         typing: {
