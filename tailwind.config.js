@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'khand': ['Khand', 'sans-serif'],
-      'urban': ['Urbanist', 'ui_sans_serif', 'system-ui'],
-      'antonio': ['Antonio', 'ui_sans_serif', 'system-ui']
+      'urban': ['Urbanist', 'sans-serif'],
+      'antonio': ['Antonio', 'ui_sans_serif', 'system-ui', 'sans-serif']
     },
     fontWeight: {
       thin: '100',
@@ -43,11 +43,7 @@ module.exports = {
       screens: {
         touch: {raw: 'only screen and (pointer: coarse)'},
       },
-    },
-    fontFamily: {
-      khand: ['"Khand"', 'sans-serif'],
-      openSans: ['Open Sans', 'sans-serif'],
-    },
+    }
   },
   // eslint-disable-next-line no-undef
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],

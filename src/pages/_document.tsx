@@ -9,6 +9,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+      {/* <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Khand:wght@300;400&family=Urbanist:ital,wght@1,200&display=swap" rel="stylesheet"/> */}
+
         <meta charSet="utf-8" />
         {/* google translate breaks react:
           - https://github.com/facebook/react/issues/11538

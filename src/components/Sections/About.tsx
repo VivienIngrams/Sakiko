@@ -15,7 +15,7 @@ const About: FC = memo(() => {
         <div
           className={classNames('col-span-1 flex flex-col items-center gap-y-6', {'md:col-span-4': !!profileImageSrc})}>
           <div className="flex flex-col items-center gap-y-2">
-            <h2 className="text-center uppercase Khand text-2xl font-thin text-white">About me</h2>
+            <h2 className="text-center uppercase mb-10 text-2xl font-thin text-white">About me</h2>
             {!!profileImageSrc && (
               <div className="col-span-1 flex justify-center md:justify-start">
                 <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-32 md:w-32">
@@ -23,7 +23,7 @@ const About: FC = memo(() => {
                 </div>
               </div>
             )}
-            <p className="prose prose-sm p-5 font-thin text-center text-gray-300 sm:prose-base">{description}</p>
+            <p className="prose prose-sm p-5 font-khand font-thin text-center text-gray-300 sm:prose-base">{description}</p>
             {!!profileImageSrc && (
               <div className="col-span-1 flex justify-center md:justify-start">
                 <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-32 md:w-32">
