@@ -2,6 +2,23 @@ import {DownloadIcon} from '@heroicons/react/outline';
 
 // import pdf from '../assets/resume.pdf';
 import InstagramIcon from '../components/Icon/InstagramIcon';
+import stageImage1 from '../images/portfolio/1.jpg';
+import stageImage2 from '../images/portfolio/2.jpg';
+import stageImage3 from '../images/portfolio/3.jpg';
+import stageImage4 from '../images/portfolio/4.jpg';
+import stageImage5 from '../images/portfolio/5.jpg';
+import stageImage6 from '../images/portfolio/6.jpg';
+import stageImage7 from '../images/portfolio/7.jpg';
+import stageImage8 from '../images/portfolio/8.jpg';
+import stageImage9 from '../images/portfolio/9.jpg';
+import stageImage10 from '../images/portfolio/10.jpg';
+import stageImage11 from '../images/portfolio/11.jpg';
+import stageImage12 from '../images/portfolio/12.jpg';
+import stageImage13 from '../images/portfolio/13.jpg';
+import stageImage14 from '../images/portfolio/14.jpg';
+import stageImage15 from '../images/portfolio/15.jpg';
+import stageImage16 from '../images/portfolio/16.jpg';
+import stageImage17 from '../images/portfolio/17.jpg';
 import profilepic from '../images/portfolio/book.jpg';
 import bookImage from '../images/portfolio/book(1).jpg';
 import porfolioImage18 from '../images/portfolio/book(2).jpg';
@@ -184,6 +201,60 @@ export const portfolioItemsHands: PortfolioItem[] = [
     image: porfolioImage22,
   },
 ];
+export const portfolioItemsStage: PortfolioItem[] = [
+  {
+    image: stageImage1,
+  },
+  {
+    image: stageImage2,
+  },
+  {
+    image: stageImage3,
+  },
+  {
+    image: stageImage4,
+  },
+  {
+    image: stageImage5,
+  },
+
+  {
+    image: stageImage6,
+  },
+  {
+    image: stageImage7,
+  },
+  {
+    image: stageImage8,
+  },
+  {
+    image: stageImage9,
+  },
+  {
+    image: stageImage10,
+  },
+  {
+    image: stageImage11,
+  },
+  {
+    image: stageImage12,
+  },
+  {
+    image: stageImage13,
+  },
+  {
+    image: stageImage14,
+  },
+  {
+    image: stageImage15,
+  },
+  {
+    image: stageImage16,
+  },
+  {
+    image: stageImage17,
+  },
+];
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
@@ -297,5 +368,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/sakikichan?igshid=YmMyMTA2M2Y='},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://instagram.com/sakiko.oishi?igshid=YjNmNGQ3MDY='},
+  // {label: 'Facebook', Icon: FacebookIcon, href: 'https://facebook.com/SakikoOISHI'},
 ];

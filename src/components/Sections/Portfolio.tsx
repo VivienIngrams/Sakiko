@@ -5,7 +5,14 @@ import Image from 'next/image';
 import {FC, memo} from 'react';
 
 // import {isMobile} from '../../config';
-import {portfolioItemsDance, portfolioItemsHands,  portfolioItemsModel, SectionId} from '../../data/data';
+import {
+  portfolioItemsDance,
+  portfolioItemsHands,
+  portfolioItemsModel,
+  portfolioItemsStage,
+  SectionId,
+} from '../../data/data';
+// import videoSrc from '../../images/Hermes-mains.mp4';
 // import {PortfolioItem} from '../../data/dataDef';
 // import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
@@ -13,7 +20,7 @@ import Section from '../Layout/Section';
 const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-1000" sectionId={SectionId.Portfolio}>
-      <div className="flex flex-col mb-20 gap-y-8">
+      <div className="mb-20 flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Dancer</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItemsDance.map((item, index) => {
@@ -32,7 +39,7 @@ const Portfolio: FC = memo(() => {
           })}
         </div>
       </div>
-      <div className="flex flex-col mb-20 gap-y-8">
+      <div className="mb-20 flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Model</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItemsModel.map((item, index) => {
@@ -50,10 +57,37 @@ const Portfolio: FC = memo(() => {
             );
           })}
         </div>
-      </div> <div className="flex flex-col mb-20 gap-y-8">
+      </div>{' '}
+      <div className="mb-20 flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Hands</h2>
         <div className=" w-full columns-2 md:columns-3 lg:columns-4">
           {portfolioItemsHands.map((item, index) => {
+            const {image} = item;
+            return (
+              <div className="pb-6" key={`${index}`}>
+                <div
+                  className={classNames(
+                    'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
+                  )}>
+                  <Image alt="Sakiko" layout="responsive" placeholder="blur" src={image} />
+                  {/* <ItemOverlay item={item} /> */}
+                  {/* <div>
+                    <video controls>
+                      <source src={videoSrc} type="video/mp4" />
+                      {/* Add additional source tags for different video formats */}
+                      {/* Your browser does not support the video tag.
+                    </video>
+                  </div> */} 
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="mb-20 flex flex-col gap-y-8">
+        <h2 className="self-center text-xl font-bold text-white">On Stage</h2>
+        <div className=" w-full columns-2 md:columns-3 lg:columns-4">
+          {portfolioItemsStage.map((item, index) => {
             const {image} = item;
             return (
               <div className="pb-6" key={`${index}`}>
@@ -81,23 +115,23 @@ export default Portfolio;
 //   const [showOverlay, setShowOverlay] = useState(false);
 //   const linkRef = useRef<HTMLAnchorElement>(null);
 
-  // useEffect(() => {
-  //   // Avoid hydration styling errors by setting mobile in useEffect
-  //   if (isMobile) {
-  //     setMobile(true);
-  //   }
-  // }, []);
-  // useDetectOutsideClick(linkRef, () => setShowOverlay(false));
+// useEffect(() => {
+//   // Avoid hydration styling errors by setting mobile in useEffect
+//   if (isMobile) {
+//     setMobile(true);
+//   }
+// }, []);
+// useDetectOutsideClick(linkRef, () => setShowOverlay(false));
 
-  // const handleItemClick = useCallback(
-  //   (event: MouseEvent<HTMLElement>) => {
-  //     if (mobile && !showOverlay) {
-  //       event.preventDefault();
-  //       setShowOverlay(!showOverlay);
-  //     }
-  //   },
-  //   [mobile, showOverlay],
-  // );
+// const handleItemClick = useCallback(
+//   (event: MouseEvent<HTMLElement>) => {
+//     if (mobile && !showOverlay) {
+//       event.preventDefault();
+//       setShowOverlay(!showOverlay);
+//     }
+//   },
+//   [mobile, showOverlay],
+// );
 
 //   return (
 //     <a
