@@ -271,26 +271,26 @@ export const education: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: '2022 - Present',
-    location: 'Danseuse freelance',
+    location: 'Dancer',
     title: 'CCN de Caen',
-    content: <p>Nom de la pièce</p>,
+    content: <p>3 works for 12</p>,
   },
   {
     date: '2021 - Present',
-    location: 'Danseuse freelance',
+    location: 'Dancer',
     title: 'Compagnie Sine Qua Non Art',
-    content: <p>Nom de la pièce</p>,
+    content: <p>YUREI</p>,
   },
   {
     date: '2020 - Present',
-    location: 'Danseuse freelance',
+    location: 'Dancer',
     title: 'Compagnie La Bazooka',
-    content: <p>Nom de la pièce</p>,
+    content: <p>Pillowgraphies</p>,
   },
 
   {
     date: 'March 2008 - February 2019',
-    location: 'Artiste Chorégraphique',
+    location: 'Dancer',
     title: 'CCN Ballet de Lorraine',
     content: (
       <div>
@@ -325,13 +325,13 @@ export const experience: TimelineItem[] = [
   },
   {
     date: '2008',
-    location: 'Danseuse supplémentaire',
+    location: 'Dancer',
     title: "Ballet d'Europe",
     content: <p>Mireille</p>,
   },
   {
     date: '2007',
-    location: 'Danseuse stagiaire',
+    location: 'Apprentice dancer',
     title: 'Ballet National de Marseille',
     content: <p>Concerto Barocco</p>,
   },
