@@ -1,12 +1,12 @@
 // import {ExternalLinkIcon} from '@heroicons/react/outline';
-import { ExternalLinkIcon } from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
+import {FC, memo} from 'react';
 
+// import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 // import ReactPlayer from 'react-player';
 // import {FC, memo} from 'react';
-import {isMobile} from '../../config';
+// import {isMobile} from '../../config';
 import {
   portfolioItemsDance,
   portfolioItemsHands,
@@ -14,7 +14,7 @@ import {
   portfolioItemsStage,
   SectionId,
 } from '../../data/data';
-import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
+// import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 // import {PortfolioItem} from '../../data/dataDef';
 // import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
