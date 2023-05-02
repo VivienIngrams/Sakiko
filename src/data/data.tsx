@@ -294,30 +294,30 @@ export const experience: TimelineItem[] = [
     title: 'CCN Ballet de Lorraine',
     content: (
       <div>
-        <p>« Opal Loop/Cloud installation #72503 »: Trisha Brown</p>
+        <p>« Opal Loop/ Cloud installation #72503 » : Trisha Brown</p>
         <p>« Shaker Loops » : Andonis Foniadakis</p>
         <p>« Murmuration » : Rachid Ouramdane</p>
         <p>« ELEMENTEN l - Room » : Cindy Van Aker</p>
         <p>« Objets re-trouvés » Mathilde Monnier</p>
         <p>« Transposition #1,2 » : Emanuel Gat</p>
-        <p>« Vertiginous»,« The Ville Parody of Address »: William Forsythe</p>
-        <p>« Fabrication » « Sounddance » « Rain Forest » « Duets »: Merce Cunningham</p>
-        <p>« In The Upper Room » « Nine Sinatra Songs »: Twyla tharp</p>
+        <p>« Vertiginous»,« The Ville Parody of Address » : William Forsythe</p>
+        <p>« Fabrication » « Sounddance » « Rain Forest » « Duets » : Merce Cunningham</p>
+        <p>« In The Upper Room » « Nine Sinatra Songs » : Twyla tharp</p>
         <p>« Sketches from Chronicle » : Martha Graham</p>
         <p>« Devoted » : Cecilia Bengolea and François Chaignaud</p>
         <p>« Cela nous concerne tous » : Miguel Gutierrez</p>
         <p>« HOK solo pour ensemble » : Alban Richard</p>
-        <p>« Record of ancient things » : Petter Jacobsson et Thomas Caley</p>
+        <p>« Record of ancient things » : Petter Jacobsson and Thomas Caley</p>
         <p>« Corps De Ballet » : Noé Soulier</p>
         <p>« Hedda » : Ingun Bjornsgaard</p>
         <p>« Showroomdummises #3 » : Gisele Vienne</p>
         <p>« Mariage » : Tero Saarinen</p>
-        <p> « Le sacre du printemps » : Ginette Laurin</p>
+        <p> « Le Sacre du printemps » : Ginette Laurin</p>
         <p>« Rave » : Karole Armitage</p>
         <p> « Petrouchka » : Michel Fokine</p>
         <p> « Les noces » : Bronislava Nijinska </p>
         <p> « Tragic love » : Steven Petronio</p>
-        <p> « Hymnen » : Didier Deschamps et Lia Rodriguez</p>
+        <p> « Hymnen » : Didier Deschamps and Lia Rodriguez</p>
         <p> « Organic beat » : Paolo Ribeiro</p>
         <p> « L’après-midi d’un faune » : Michel Fokine</p>
       </div>
