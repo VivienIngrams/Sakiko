@@ -106,7 +106,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   bookImageSrc: bookImage,
-  description: `I am a professional freelance dancer and model. I have created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez and Mathilde Monnier and performed repertory by Twyla tharp, William Forsythe, Trisha Brown, Merce Cunningham and Martha Graham.`,
+  description: `I am a professional freelance dancer and model. I have created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez and Mathilde Monnier and performed repertory by Twyla Tharp, William Forsythe, Trisha Brown, Merce Cunningham and Martha Graham.`,
   description2: `Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and went on to dance with the CCN Ballet de Lorraine, Ballet national de Marseille, Ballet d'Europe, CCN de Caen, la Bazooka, Compagnie Sine Qua Non Art and model for Hermes and Heineken advertisement campaigns.`,  aboutItems: [
     {label: 'Nationality', text: 'Japanese'},
     {label: 'Date of Birth', text: '18th June 1989'},
@@ -285,7 +285,19 @@ export const experience: TimelineItem[] = [
     date: '2020 - Present',
     location: 'Dancer',
     title: 'Compagnie La Bazooka',
-    content: <p>Pillowgraphies</p>,
+    content: <div><p>Pillowgraphies</p><p>Monstres indiens</p></div>,
+  },
+  {
+    date: '2020',
+    location: 'Dancer',
+    title: 'Gisèle Vienne and Etienne Bideau-Ray',
+    content: <div><p>Showroom Dummies #4</p></div>,
+  },
+  {
+    date: '2019',
+    location: 'Dancer',
+    title: 'Chatha',
+    content: <div><p>L'Amour sourcier</p><p>Narcose</p></div>,
   },
 
   {
