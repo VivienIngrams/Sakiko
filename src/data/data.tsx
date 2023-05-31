@@ -91,7 +91,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/resume.pdf',
+      href: '/sakikooishi.pdf',
       text: 'CV',
       primary: true,
       Icon: DownloadIcon,
