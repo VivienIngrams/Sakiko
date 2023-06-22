@@ -44,17 +44,12 @@ import porfolioImage15 from '../images/portfolio/portfolio-15.jpg';
 import porfolioImage16 from '../images/portfolio/portfolio-16.jpg';
 import porfolioImage17 from '../images/portfolio/portfolio-17.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-18.jpg';
+import porfolioImage27 from '../images/portfolio/portfolio-19.jpg';
+import porfolioImage26 from '../images/portfolio/portfolio-20.jpg';
+import porfolioImage24 from '../images/portfolio/portfolio-21.jpg';
+import porfolioImage25 from '../images/portfolio/portfolio-22.jpg';
 import porfolioImage23 from '../images/portfolio/sakiko.jpg';
-import {
-  About,
-  ContactSection,
-  ContactType,
-  Hero,
-  HomepageMeta,
-  PortfolioItem,
-  Social,
-  TimelineItem,
-} from './dataDef';
+import {About, ContactSection, ContactType, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
 
 /**
  * Page meta data
@@ -96,7 +91,6 @@ export const heroData: Hero = {
       primary: true,
       Icon: DownloadIcon,
     },
-
   ],
 };
 
@@ -107,7 +101,8 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   bookImageSrc: bookImage,
   description: `I am a professional freelance dancer and model. I have created roles with internationally renowned choreographers such as Francois Chaignaud, Gisèle Vienne, Miguel Gutierrez and Mathilde Monnier and performed repertory by Twyla Tharp, William Forsythe, Trisha Brown, Merce Cunningham and Martha Graham.`,
-  description2: `Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and went on to dance with the CCN Ballet de Lorraine, Ballet national de Marseille, Ballet d'Europe, CCN de Caen, la Bazooka, Compagnie Sine Qua Non Art and model for Hermes and Heineken advertisement campaigns.`,  aboutItems: [
+  description2: `Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and went on to dance with the CCN Ballet de Lorraine, Ballet national de Marseille, Ballet d'Europe, CCN de Caen, la Bazooka, Compagnie Sine Qua Non Art and model for Hermes and Heineken advertisement campaigns.`,
+  aboutItems: [
     {label: 'Nationality', text: 'Japanese'},
     {label: 'Date of Birth', text: '18th June 1989'},
     {label: 'Height', text: '166cm'},
@@ -129,6 +124,9 @@ export const aboutData: About = {
  * Portfolio section
  */
 export const portfolioItemsDance: PortfolioItem[] = [
+  {
+    image: porfolioImage24,
+  },
   {
     image: porfolioImage3,
   },
@@ -166,11 +164,21 @@ export const portfolioItemsModel: PortfolioItem[] = [
   },
 
   {
+    image: porfolioImage25,
+  },
+  {
+    image: porfolioImage27,
+  },
+  {
     image: porfolioImage11,
   },
   {
     image: porfolioImage12,
   },
+  
+    {
+      image: porfolioImage26,
+    },
 
   {
     image: porfolioImage13,
@@ -285,19 +293,33 @@ export const experience: TimelineItem[] = [
     date: '2020 - Present',
     location: 'Dancer',
     title: 'Compagnie La Bazooka',
-    content: <div><p>Pillowgraphies</p><p>Monstres indiens</p></div>,
+    content: (
+      <div>
+        <p>Pillowgraphies</p>
+        <p>Monstres indiens</p>
+      </div>
+    ),
   },
   {
     date: '2020',
     location: 'Dancer',
     title: 'Gisèle Vienne and Etienne Bideau-Ray',
-    content: <div><p>Showroom Dummies #4</p></div>,
+    content: (
+      <div>
+        <p>Showroom Dummies #4</p>
+      </div>
+    ),
   },
   {
     date: '2019',
     location: 'Dancer',
     title: 'Chatha',
-    content: <div><p>L'Amour sourcier</p><p>Narcose</p></div>,
+    content: (
+      <div>
+        <p>L'Amour sourcier</p>
+        <p>Narcose</p>
+      </div>
+    ),
   },
 
   {
@@ -372,7 +394,6 @@ export const contact: ContactSection = {
       text: '@tbakerx',
       href: 'https://www.instagram.com/tbakerx/',
     },
-
   ],
 };
 
