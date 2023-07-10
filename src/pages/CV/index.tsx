@@ -1,13 +1,17 @@
 import {FC, memo} from 'react';
 
-import {education, experience, SectionId} from '../../../data/data';
-import Section from '../../Layout/Section';
+import Section from '../../components/Layout/Section';
+import Footer from '../../components/Sections/Footer';
+import Header from '../../components/Sections/Header';
+import {education, experience, SectionId} from '../../data/data';
 import ResumeSection from './ResumeSection';
 import TimelineItem from './TimelineItem';
 
-const Resume: FC = memo(() => {
+const CV: FC = memo(() => {
   return (
-    <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
+    <>
+    <Header />
+    <Section className="bg-neutral-100" sectionId={SectionId.CV}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
         <ResumeSection title="Work Experience">
           {experience.map((item, index) => (
@@ -22,8 +26,9 @@ const Resume: FC = memo(() => {
       
       </div>
     </Section>
+    <Footer /></>
   );
 });
 
-Resume.displayName = 'Resume';
-export default Resume;
+CV.displayName = 'Resume';
+export default CV;

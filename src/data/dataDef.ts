@@ -57,22 +57,22 @@ export interface AboutItem {
 /**
  * Stat section
  */
-export interface Stat {
-  title: string;
-  value: number;
-  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-}
+// export interface Stat {
+//   title: string;
+//   value: number;
+//   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+// }
 
 
 /**
- * Portfolio section
+ * Gallery section
  */
-export interface PortfolioItem {
+export interface GalleryItem {
   image: string | StaticImageData;
 }
 
 /**
- * Resume section
+ * CV section
  */
 export interface TimelineItem {
   date: string;
@@ -84,32 +84,32 @@ export interface TimelineItem {
 /**
  * Contact section
  */
-export interface ContactSection {
-  headerText?: string;
-  description: string;
-  items: ContactItem[];
-}
+// export interface ContactSection {
+//   headerText?: string;
+//   description: string;
+//   items: ContactItem[];
+// }
 
-export const ContactType = {
-  Email: 'Email',
-  Phone: 'Phone',
-  Location: 'Location',
+// export const ContactType = {
+//   Email: 'Email',
+//   Phone: 'Phone',
+//   Location: 'Location',
 
-  Instagram: 'Instagram',
-} as const;
+//   Instagram: 'Instagram',
+// } as const;
 
-export type ContactType = typeof ContactType[keyof typeof ContactType];
+// export type ContactType = typeof ContactType[keyof typeof ContactType];
 
-export interface ContactItem {
-  type: ContactType;
-  text: string;
-  href?: string;
-}
+// export interface ContactItem {
+//   type: ContactType;
+//   text: string;
+//   href?: string;
+// }
 
-export interface ContactValue {
-  Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => JSX.Element);
-  srLabel: string;
-}
+// export interface ContactValue {
+//   Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => JSX.Element);
+//   srLabel: string;
+// }
 
 /**
  * Social items

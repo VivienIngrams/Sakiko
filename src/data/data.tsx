@@ -49,7 +49,7 @@ import porfolioImage26 from '../images/portfolio/portfolio-20.jpg';
 import porfolioImage24 from '../images/portfolio/portfolio-21.jpg';
 import porfolioImage25 from '../images/portfolio/portfolio-22.jpg';
 import porfolioImage23 from '../images/portfolio/sakiko.jpg';
-import {About, ContactSection, ContactType, Hero, HomepageMeta, PortfolioItem, Social, TimelineItem} from './dataDef';
+import {About,  GalleryItem, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
 
 /**
  * Page meta data
@@ -63,11 +63,10 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
-  About: 'about',
-  Portfolio: 'Photo Gallery',
-  Resume: 'CV',
-  Stats: 'stats',
+  Hero: 'Hero',
+  About: 'About',
+  Gallery: 'Gallery',
+  CV: 'CV',
   Book: 'Book',
 } as const;
 
@@ -121,9 +120,9 @@ export const aboutData: About = {
 };
 
 /**
- * Portfolio section
+ * Gallery section
  */
-export const portfolioItemsDance: PortfolioItem[] = [
+export const galleryItemsDance: GalleryItem[] = [
   {
     image: porfolioImage24,
   },
@@ -158,7 +157,7 @@ export const portfolioItemsDance: PortfolioItem[] = [
     image: porfolioImage5,
   },
 ];
-export const portfolioItemsModel: PortfolioItem[] = [
+export const galleryItemsModel: GalleryItem[] = [
   {
     image: porfolioImage2,
   },
@@ -194,7 +193,7 @@ export const portfolioItemsModel: PortfolioItem[] = [
     image: porfolioImage23,
   },
 ];
-export const portfolioItemsHands: PortfolioItem[] = [
+export const galleryItemsHands: GalleryItem[] = [
   {
     image: porfolioImage1,
   },
@@ -209,7 +208,7 @@ export const portfolioItemsHands: PortfolioItem[] = [
     image: porfolioImage22,
   },
 ];
-export const portfolioItemsStage: PortfolioItem[] = [
+export const galleryItemsStage: GalleryItem[] = [
   {
     image: stageImage1,
   },
@@ -265,7 +264,7 @@ export const portfolioItemsStage: PortfolioItem[] = [
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * CV section -- TODO: Standardize resume contact format or offer MDX
  */
 export const education: TimelineItem[] = [
   {
@@ -375,27 +374,27 @@ export const experience: TimelineItem[] = [
  * Contact section
  */
 
-export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
-  items: [
-    {
-      type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-  ],
-};
+// export const contact: ContactSection = {
+//   headerText: 'Get in touch.',
+//   description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+//   items: [
+//     {
+//       type: ContactType.Email,
+//       text: 'reachout@timbaker.me',
+//       href: 'mailto:reachout@timbaker.me',
+//     },
+//     {
+//       type: ContactType.Location,
+//       text: 'Victoria BC, Canada',
+//       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+//     },
+//     {
+//       type: ContactType.Instagram,
+//       text: '@tbakerx',
+//       href: 'https://www.instagram.com/tbakerx/',
+//     },
+//   ],
+// };
 
 /**
  * Social items

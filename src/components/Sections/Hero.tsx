@@ -10,6 +10,7 @@ import Socials from '../Socials';
 const Hero: FC = memo(() => {
   const {imageSrc, name, description} = heroData;
 
+
   return (
     <Section noPadding sectionId={SectionId.Hero}>
       <div className="relative flex h-screen w-screen pt-14 items-top justify-center">

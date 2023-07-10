@@ -3,13 +3,17 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
 
-import {aboutData, SectionId} from '../../data/data';
-import Section from '../Layout/Section';
+import Section from '../components/Layout/Section';
+import Footer from '../components/Sections/Footer';
+import Header from '../components/Sections/Header';
+import {aboutData, SectionId} from '../data/data';
 
 
 const Book: FC = memo(() => {
   const {profileImageSrc,  aboutItems, bookImage1, bookImage2, bookImage3} = aboutData;
   return (
+    <>
+    <Header />
     <Section className="bg-orange-900" sectionId={SectionId.Book}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         <div className={classNames('col-span-1 flex flex-col items-center gap-y-6', {'md:col-span-4': !!profileImageSrc})}>
@@ -50,6 +54,8 @@ const Book: FC = memo(() => {
         )}     </div>   </div>
       </div>
     </Section>
+    <Footer />
+    </>
   );
 });
 
