@@ -49,7 +49,7 @@ import porfolioImage26 from '../images/portfolio/portfolio-20.jpg';
 import porfolioImage24 from '../images/portfolio/portfolio-21.jpg';
 import porfolioImage25 from '../images/portfolio/portfolio-22.jpg';
 import porfolioImage23 from '../images/portfolio/sakiko.jpg';
-import {About,  GalleryItem, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
+import {About, GalleryItem, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
 
 /**
  * Page meta data
@@ -63,7 +63,7 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'Hero',
+  Hero: 'Home',
   About: 'About',
   Gallery: 'Gallery',
   CV: 'CV',
@@ -174,10 +174,10 @@ export const galleryItemsModel: GalleryItem[] = [
   {
     image: porfolioImage12,
   },
-  
-    {
-      image: porfolioImage26,
-    },
+
+  {
+    image: porfolioImage26,
+  },
 
   {
     image: porfolioImage13,
@@ -369,32 +369,6 @@ export const experience: TimelineItem[] = [
     content: <p>Concerto Barocco</p>,
   },
 ];
-
-/**
- * Contact section
- */
-
-// export const contact: ContactSection = {
-//   headerText: 'Get in touch.',
-//   description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
-//   items: [
-//     {
-//       type: ContactType.Email,
-//       text: 'reachout@timbaker.me',
-//       href: 'mailto:reachout@timbaker.me',
-//     },
-//     {
-//       type: ContactType.Location,
-//       text: 'Victoria BC, Canada',
-//       href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-//     },
-//     {
-//       type: ContactType.Instagram,
-//       text: '@tbakerx',
-//       href: 'https://www.instagram.com/tbakerx/',
-//     },
-//   ],
-// };
 
 /**
  * Social items
