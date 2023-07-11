@@ -1,4 +1,4 @@
-import {ChevronDownIcon} from '@heroicons/react/outline';
+
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import {FC, memo} from 'react';
@@ -6,7 +6,6 @@ import {FC, memo} from 'react';
 import Page from '../components/Layout/Page';
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
-// import Hero from '../components/Sections/Hero';
 import Socials from '../components/Socials';
 import {heroData, homePageMeta, SectionId} from '../data/data';
 
