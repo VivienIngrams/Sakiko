@@ -8,7 +8,7 @@ const Footer: FC = memo(() => (
       <div className="flex gap-x-2 text-neutral-300">
         <Socials />
       </div>
-      <span className="text-sm text-neutral-400">sakiko_oishi@yahoo.com</span>
+      <span className="text-sm text-neutral-100">sakiko_oishi@yahoo.com</span>
     </div>
   </div>
 ));

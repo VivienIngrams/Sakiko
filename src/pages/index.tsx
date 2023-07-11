@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import {FC, memo, useMemo} from 'react';
@@ -6,7 +6,6 @@ import {FC, memo, useMemo} from 'react';
 import Page from '../components/Layout/Page';
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
-import Socials from '../components/Socials';
 import {heroData, homePageMeta, SectionId} from '../data/data';
 
 // eslint-disable-next-line react-memo/require-memo
@@ -35,9 +34,9 @@ const Home: FC = memo(() => {
               {heroData.description}
               
               <div className=" p-2 mt-5  max-w-screen-lg px-4 font-urban text-2xl font-thin text-white space-y-0  sm:text-3xl lg:px-0 lg:text-5xl">
-                {navSections.map((section: unknown) => (
-                  <div className="p-4">
-                    <Link href={`/${section}`}>{section}</Link>
+                {navSections.map((section: string) => (
+                  <div className="p-4" key={section}>
+                    <Link href={`/${section}`} >{section}</Link>
                   </div>
                 ))}
               </div>
