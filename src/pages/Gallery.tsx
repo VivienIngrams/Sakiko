@@ -2,6 +2,7 @@
 import {ChevronUpIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
+import Link from 'next/link';
 import {FC, memo} from 'react';
 
 // import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
@@ -63,7 +64,7 @@ const Gallery: FC = memo(() => {
         <div className="mb-20 flex flex-col gap-y-8">
           <h2 className="self-center text-xl font-bold text-white">Hands</h2>
           <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-            {galleryItemsHands.map((item: {image: any}, index: any) => {
+            {galleryItemsHands.map((item, index) => {
               const {image} = item;
               return (
                 <div className="pb-6" key={`${index}`}>
@@ -101,11 +102,11 @@ const Gallery: FC = memo(() => {
         </div>
       </Section>
       <div className="inset-x-0 -bottom-4 flex justify-center sm:-top-6">
-        <a
+        <Link
           className="rounded-full bg-neutral-100 p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
           href='/Gallery'>
           <ChevronUpIcon className="h-6 w-6 bg-transparent sm:h-8 sm:w-8" />
-        </a>
+        </Link>
       </div>
       <Footer />
     </>
