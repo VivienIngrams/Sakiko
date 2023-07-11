@@ -8,7 +8,7 @@ import Header from '../components/Sections/Header';
 import {aboutData, SectionId} from '../data/data';
 
 const About: FC = memo(() => {
-  const {profileImageSrc, bookImageSrc, description, description2} = aboutData;
+  const {profileImageSrc, bookImageSrc, description} = aboutData;
   return (
     <>
       <Header />
