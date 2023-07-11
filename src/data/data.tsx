@@ -65,9 +65,9 @@ export const homePageMeta: HomepageMeta = {
 export const SectionId = {
   Hero: 'Home',
   About: 'About',
+  Book: 'Book',
   Gallery: 'Gallery',
   CV: 'CV',
-  Book: 'Book',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -80,7 +80,7 @@ export const heroData: Hero = {
   name: `SAKIKO OISHI`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer and model</p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer  Choreographer  Model  Actress</p>
     </>
   ),
   actions: [
