@@ -23,14 +23,14 @@ const About: FC = memo(() => {
               <div className="flex ">
                 {!!profileImageSrc && (
                   <div className="col-span-1 m-5 flex justify-center md:justify-start">
-                    <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-32 md:w-32">
+                    <div className="relative h-60 w-60 overflow-hidden rounded-xl md:h-40 md:w-40">
                       <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc} />
                     </div>
                   </div>
                 )}
                 {!!profileImageSrc && (
                   <div className="col-span-1 m-5 flex justify-center md:justify-start">
-                    <div className="relative h-40 w-40 overflow-hidden rounded-xl md:h-32 md:w-32">
+                    <div className="relative h-60 w-60 overflow-hidden rounded-xl md:h-40 md:w-40">
                       <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImageSrc} />
                     </div>
                   </div>
