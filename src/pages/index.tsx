@@ -33,7 +33,7 @@ const Home: FC = memo(() => {
               <h1 className="mt-5 font-urban text-4xl font-thin text-white sm:text-5xl lg:text-7xl">{name}</h1>
               {heroData.description}
               
-              <div className=" p-2 mt-5  max-w-screen-lg px-4 font-urban text-2xl font-thin text-white space-y-0  sm:text-3xl lg:px-0 lg:text-5xl">
+              <div className=" p-2 mt-5 capitalize max-w-screen-lg px-4 font-urban text-2xl font-thin text-white space-y-0  sm:text-3xl lg:px-0 lg:text-5xl">
                 {navSections.map((section: string) => (
                   <div className="p-4" key={section}>
                     <Link href={`/${section}`} >{section}</Link>
