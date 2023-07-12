@@ -63,10 +63,10 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'Home',
-  About: 'About',
-  Book: 'Book',
-  Gallery: 'Gallery',
+  Hero: 'home',
+  About: 'about',
+  Book: 'book',
+  Gallery: 'gallery',
   CV: 'CV',
 } as const;
 

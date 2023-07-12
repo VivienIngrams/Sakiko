@@ -8,14 +8,14 @@ import {FC, memo} from 'react';
 // import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 // import {PortfolioItem} from '../../data/dataDef';
 // import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
-import Section from '../components/Layout/Section';
-import Footer from '../components/Sections/Footer';
+import Section from '../../components/Layout/Section';
+import Footer from '../../components/Sections/Footer';
 // import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 // import ReactPlayer from 'react-player';
 // import {FC, memo} from 'react';
 // import {isMobile} from '../../config';
-import Header from '../components/Sections/Header';
-import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsStage, SectionId} from '../data/data';
+import Header from '../../components/Sections/Header';
+import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsStage, SectionId} from '../../data/data';
 // import VideoPlayer from './Video';
 
 const Gallery: FC = memo(() => {
