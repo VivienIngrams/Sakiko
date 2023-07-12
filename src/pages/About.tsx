@@ -18,27 +18,20 @@ const About: FC = memo(() => {
             className={classNames('col-span-1 flex flex-col items-center gap-y-6', {
               'md:col-span-4': !!profileImageSrc,
             })}>
-            <div className="flex w-auto flex-col items-center gap-y-2">
+            <div className="flex w-full flex-col items-center gap-y-2">
               <h2 className="mb-10 text-center text-2xl font-thin uppercase text-white">About me</h2>
-              <div className="flex ">
+              <div className="flex flex-col max-w">
                 {!!profileImageSrc && (
-                  <div className="col-span-1 m-5 flex justify-center md:justify-start">
-                    <div className="relative h-60 w-60 overflow-hidden rounded-xl md:h-40 md:w-40">
-                      <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc} />
-                    </div>
-                  </div>
-                )}
-                {!!profileImageSrc && (
-                  <div className="col-span-1 m-5 flex justify-center md:justify-start">
-                    <div className="relative h-60 w-60 overflow-hidden rounded-xl md:h-40 md:w-40">
+                  <div className="col-span-1 m-5 flex justify-center ">
+                    <div className="relative h-60 w-60 overflow-hidden rounded-xl md:h-80 md:w-80">
                       <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImageSrc} />
                     </div>
                   </div>
                 )}{' '}
+                <p className="prose prose-sm  p-5 max-w-sm text-center w text-xl font-khand font-thin text-gray-300 sm:prose-base md:max-w-screen-xl">
+                  {description}
+                </p>
               </div>
-              <p className="prose prose-sm p-5 text-center font-khand font-thin text-gray-300 sm:prose-base">
-                {description}
-              </p>
             </div>
           </div>
         </div>
