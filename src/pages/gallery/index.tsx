@@ -18,96 +18,62 @@ import Header from '../../components/Sections/Header';
 import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsStage, SectionId} from '../../data/data';
 // import VideoPlayer from './Video';
 
+const danceImage = galleryItemsDance[0].image;
+const handsImage = galleryItemsDance[0].image;
+const stageImage = galleryItemsStage[0].image;
+// const videosImage = galleryItemsVideos[0].image;
+const modelImage = galleryItemsModel[0].image;
+
 const Gallery: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="bg-neutral-1000" sectionId={SectionId.Gallery}>
-        <div className="mb-20 flex flex-col gap-y-8">
-          <h2 className="self-center text-xl font-bold text-white">Dancer</h2>
-          <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-            {galleryItemsDance.map((item, index) => {
-              const {image} = item;
-              return (
-                <div className="pb-6" key={`${index}`}>
-                  <div
-                    className={classNames(
-                      'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                    )}>
-                    <Image alt="Sakiko" layout="responsive" placeholder="blur" src={image} />
-                    {/* <ItemOverlay item={item} /> */}
-                  </div>
+      <Section className="bg-black" sectionId={SectionId.Gallery}>
+        <div className="flex items-center justify-center min-h-screen">
+          <div className="sm:col-span-2 flex flex-col 2xl:flex-nowrap md:flex-wrap md:flex-row justify-center md:max-w-screen-xl">
+            <div className="col-span-1 m-5 flex justify-center">
+              <div className="flex flex-col justify-center">
+                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
                 </div>
-              );
-            })}
-          </div>
-        </div>
-        <div className="mb-20 flex flex-col gap-y-8">
-          <h2 className="self-center text-xl font-bold text-white">Model</h2>
-          <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-            {galleryItemsModel.map((item, index) => {
-              const {image} = item;
-              return (
-                <div className="pb-6" key={`${index}`}>
-                  <div
-                    className={classNames(
-                      'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                    )}>
-                    <Image alt="Sakiko" layout="responsive" placeholder="blur" src={image} />
-                    {/* <ItemOverlay item={item} /> */}
-                  </div>
+              </div>
+            </div>
+            <div className="col-span-1 m-5 flex justify-center">
+              <div className="flex flex-col justify-center">
+                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
                 </div>
-              );
-            })}
-          </div>
-        </div>{' '}
-        <div className="mb-20 flex flex-col gap-y-8">
-          <h2 className="self-center text-xl font-bold text-white">Hands</h2>
-          <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-            {galleryItemsHands.map((item, index) => {
-              const {image} = item;
-              return (
-                <div className="pb-6" key={`${index}`}>
-                  <div
-                    className={classNames(
-                      'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                    )}>
-                    <Image alt="Sakiko" layout="responsive" placeholder="blur" src={image} />
-                    {/* <ItemOverlay item={item} /> */}
-                    {/* <ReactPlayer  url='https://www.instagram.com/p/CWSXNKVo7KO/' /> */}
-                  </div>
+              </div>
+            </div>
+            <div className="col-span-1 m-5 flex justify-center">
+              <div className="flex flex-col justify-center">
+                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
                 </div>
-              );
-            })}
-          </div>
-        </div>
-        <div className="mb-20 flex flex-col gap-y-8">
-          <h2 className="self-center text-xl font-bold text-white">On Stage</h2>
-          <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-            {galleryItemsStage.map((item, index) => {
-              const {image} = item;
-              return (
-                <div className="pb-6" key={`${index}`}>
-                  <div
-                    className={classNames(
-                      'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                    )}>
-                    <Image alt="Sakiko" layout="responsive" placeholder="blur" src={image} />
-                    {/* <ItemOverlay item={item} /> */}
-                  </div>
+              </div>
+            </div>
+            <div className="col-span-1 m-5 flex justify-center">
+              <div className="flex flex-col justify-center">
+                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
                 </div>
-              );
-            })}
+              </div>
+            </div>
+            <div className="col-span-1 m-5 flex justify-center">
+              <div className="flex flex-col justify-center">
+                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Section>
-      <div className="inset-x-0 -bottom-4 flex justify-center sm:-top-6">
-        <Link
-          className="rounded-full bg-neutral-100 p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
-          href='/Gallery'>
-          <ChevronUpIcon className="h-6 w-6 bg-transparent sm:h-8 sm:w-8" />
-        </Link>
-      </div>
       <Footer />
     </>
   );
