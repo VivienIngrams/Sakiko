@@ -16,11 +16,11 @@ import Header from '../../components/Sections/Header';
 import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsStage, SectionId} from '../../data/data';
 // import VideoPlayer from './Video';
 
-const danceImage = galleryItemsDance[0].image;
+const danceImage = galleryItemsDance[3].image;
 const handsImage = galleryItemsHands[0].image;
-const stageImage = galleryItemsStage[0].image;
+const stageImage = galleryItemsStage[9].image;
 const videosImage = galleryItemsDance[1].image;
-const modelImage = galleryItemsModel[0].image;
+const modelImage = galleryItemsModel[5].image;
 
 const Gallery: FC = memo(() => {
   return (
