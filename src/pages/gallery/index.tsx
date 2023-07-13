@@ -19,7 +19,7 @@ import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsSta
 const danceImage = galleryItemsDance[0].image;
 const handsImage = galleryItemsHands[0].image;
 const stageImage = galleryItemsStage[0].image;
-// const videosImage = galleryItemsVideos[0].image;
+const videosImage = galleryItemsDance[1].image;
 const modelImage = galleryItemsModel[0].image;
 
 const Gallery: FC = memo(() => {
@@ -70,11 +70,11 @@ const Gallery: FC = memo(() => {
               </Link>
             </div>
             <div className="col-span-1 m-5 flex justify-center">
-              <Link href="/gallery/dance" passHref>
+              <Link href="/gallery/videos" passHref>
                 <a className="flex flex-col justify-center">
-                  <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                  <p className="text-center text-2xl font-thin uppercase text-white">Videos</p>
                   <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                    <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
+                    <Image alt="about-me-image" layout="fill" objectFit="cover" src={videosImage} />
                   </div>
                 </a>
               </Link>

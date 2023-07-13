@@ -13,7 +13,7 @@ const Stage: FC = memo(() => {
       <Header />
       <Section className="bg-black" sectionId={SectionId.Gallery}>
         <div className="mb-20 flex flex-col gap-y-8">
-          <h2 className="self-center text-xl font-bold text-white">Stager</h2>
+          <h2 className="self-center text-xl font-bold text-white">Stage</h2>
           <div className=" w-full columns-2 md:columns-3 lg:columns-4">
             {galleryItemsStage.map((item, index) => {
               const {image} = item;
