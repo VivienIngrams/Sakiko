@@ -19,7 +19,7 @@ const Model: FC = memo(() => {
       section = galleryItemsDance;
       break;
     case 'model':
-      section = galleryItemsDance;
+      section = galleryItemsModel;
       break;
     case 'stage':
       section = galleryItemsStage;
@@ -60,3 +60,4 @@ const Model: FC = memo(() => {
 
 Model.displayName = 'Model';
 export default Model;
+
