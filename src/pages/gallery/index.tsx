@@ -26,8 +26,8 @@ const Gallery: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="bg-black" sectionId={SectionId.Gallery}>
-        <div className="flex min-h-screen items-center justify-center">
+      <Section className="bg-black " sectionId={SectionId.Gallery}>
+        <div className="flex min-h-screen items-center justify-center ">
           <div className="flex flex-col justify-center md:max-w-screen-xl md:flex-row md:flex-wrap md:columns-3 ">
             <div className="col-span-1 m-5 flex justify-center">
               <Link href="/gallery/dance" passHref>

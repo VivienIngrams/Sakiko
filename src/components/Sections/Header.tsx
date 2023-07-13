@@ -65,7 +65,7 @@ export const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId 
     }, [isOpen]);
 
     const baseClass =
-      'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500';
+      'p-2 rounded-md first-letter:uppercase font-urban uppercase italic transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500';
     const activeClass = classNames(baseClass, 'bg-neutral-900 text-white font-bold');
     const inactiveClass = classNames(baseClass, 'text-neutral-200 font-medium');
     return (
