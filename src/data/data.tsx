@@ -1,5 +1,6 @@
 import {DownloadIcon} from '@heroicons/react/outline';
 
+import FacebookIcon from '../components/Icon/FacebookIcon';
 // import pdf from '../assets/resume.pdf';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import stageImage1 from '../images/portfolio/1.jpg';
@@ -375,5 +376,5 @@ export const experience: TimelineItem[] = [
  */
 export const socialLinks: Social[] = [
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://instagram.com/sakiko.oishi?igshid=YjNmNGQ3MDY='},
-  // {label: 'Facebook', Icon: FacebookIcon, href: 'https://facebook.com/SakikoOISHI'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://facebook.com/SakikoOISHI'},
 ];

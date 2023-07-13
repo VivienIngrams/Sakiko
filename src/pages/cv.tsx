@@ -18,7 +18,7 @@ const CV: FC = memo(() => {
             <a
               className={classNames(
                 'border-2bg-none flex gap-x-2 rounded-full bg-neutral-700/50 py-2 px-4 text-sm font-medium text-red-900 ring-offset-gray-700/80 hover:bg-neutral-400/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                primary ? 'border-gray-900 ring-gray-900' : 'border-red-900 ring-red-900',
+                primary ? 'border-orange-900 ring-orange-900' : 'border-red-900 ring-red-900',
               )}
               href={href}
               key={text}>
