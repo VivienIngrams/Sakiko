@@ -5,17 +5,17 @@ import {FC, memo} from 'react';
 import Section from '../../components/Layout/Section';
 import Footer from '../../components/Sections/Footer';
 import Header from '../../components/Sections/Header';
-import {galleryItemsDance,SectionId} from '../../data/data';
+import {galleryItemsStage,SectionId} from '../../data/data';
 
-const Dance: FC = memo(() => {
+const Stage: FC = memo(() => {
   return (
     <>
       <Header />
       <Section className="bg-black" sectionId={SectionId.Gallery}>
         <div className="mb-20 flex flex-col gap-y-8">
-          <h2 className="self-center text-xl font-bold text-white">Dancer</h2>
+          <h2 className="self-center text-xl font-bold text-white">Stager</h2>
           <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-            {galleryItemsDance.map((item, index) => {
+            {galleryItemsStage.map((item, index) => {
               const {image} = item;
               return (
                 <div className="pb-6" key={`${index}`}>
@@ -37,5 +37,5 @@ const Dance: FC = memo(() => {
   );
 });
 
-Dance.displayName = 'Dance';
-export default Dance;
+Stage.displayName = 'Stage';
+export default Stage;

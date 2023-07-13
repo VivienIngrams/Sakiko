@@ -1,6 +1,4 @@
 // import {ExternalLinkIcon} from '@heroicons/react/outline';
-import {ChevronUpIcon} from '@heroicons/react/outline';
-import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 import {FC, memo} from 'react';
@@ -19,7 +17,7 @@ import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsSta
 // import VideoPlayer from './Video';
 
 const danceImage = galleryItemsDance[0].image;
-const handsImage = galleryItemsDance[0].image;
+const handsImage = galleryItemsHands[0].image;
 const stageImage = galleryItemsStage[0].image;
 // const videosImage = galleryItemsVideos[0].image;
 const modelImage = galleryItemsModel[0].image;
@@ -29,47 +27,57 @@ const Gallery: FC = memo(() => {
     <>
       <Header />
       <Section className="bg-black" sectionId={SectionId.Gallery}>
-        <div className="flex items-center justify-center min-h-screen">
-          <div className="sm:col-span-2 flex flex-col 2xl:flex-nowrap md:flex-wrap md:flex-row justify-center md:max-w-screen-xl">
+        <div className="flex min-h-screen items-center justify-center">
+          <div className="flex flex-col justify-center md:max-w-screen-xl md:flex-row md:flex-wrap md:columns-3 ">
             <div className="col-span-1 m-5 flex justify-center">
-              <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
-                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
-                </div>
-              </div>
+              <Link href="/gallery/dance" passHref>
+                <a className="flex flex-col justify-center">
+                  <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                    <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
+                  </div>
+                </a>
+              </Link>
             </div>
             <div className="col-span-1 m-5 flex justify-center">
-              <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">Hands</p>
-                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={handsImage} />
-                </div>
-              </div>
+              <Link href="/gallery/hands" passHref>
+                <a className="flex flex-col justify-center">
+                  <p className="text-center text-2xl font-thin uppercase text-white">Hands</p>
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                    <Image alt="about-me-image" layout="fill" objectFit="cover" src={handsImage} />
+                  </div>
+                </a>
+              </Link>
             </div>
             <div className="col-span-1 m-5 flex justify-center">
-              <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">Model</p>
-                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={modelImage} />
-                </div>
-              </div>
+              <Link href="/gallery/model" passHref>
+                <a className="flex flex-col justify-center">
+                  <p className="text-center text-2xl font-thin uppercase text-white">Model</p>
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                    <Image alt="about-me-image" layout="fill" objectFit="cover" src={modelImage} />
+                  </div>
+                </a>
+              </Link>
             </div>
             <div className="col-span-1 m-5 flex justify-center">
-              <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">On Stage</p>
-                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={stageImage} />
-                </div>
-              </div>
+              <Link href="/gallery/stage" passHref>
+                <a className="flex flex-col justify-center">
+                  <p className="text-center text-2xl font-thin uppercase text-white">On Stage</p>
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                    <Image alt="about-me-image" layout="fill" objectFit="cover" src={stageImage} />
+                  </div>
+                </a>
+              </Link>
             </div>
             <div className="col-span-1 m-5 flex justify-center">
-              <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
-                <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
-                </div>
-              </div>
+              <Link href="/gallery/dance" passHref>
+                <a className="flex flex-col justify-center">
+                  <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                    <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
