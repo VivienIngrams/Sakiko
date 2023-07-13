@@ -41,25 +41,25 @@ const Gallery: FC = memo(() => {
             </div>
             <div className="col-span-1 m-5 flex justify-center">
               <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <p className="text-center text-2xl font-thin uppercase text-white">Hands</p>
                 <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={handsImage} />
                 </div>
               </div>
             </div>
             <div className="col-span-1 m-5 flex justify-center">
               <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <p className="text-center text-2xl font-thin uppercase text-white">Model</p>
                 <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={modelImage} />
                 </div>
               </div>
             </div>
             <div className="col-span-1 m-5 flex justify-center">
               <div className="flex flex-col justify-center">
-                <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
+                <p className="text-center text-2xl font-thin uppercase text-white">On Stage</p>
                 <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
-                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
+                  <Image alt="about-me-image" layout="fill" objectFit="cover" src={stageImage} />
                 </div>
               </div>
             </div>
