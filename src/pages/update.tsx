@@ -1,62 +1,68 @@
-// import classNames from 'classnames';
-// import {FC, memo, useRef} from 'react';
+import classNames from 'classnames';
+import {FC, FormEvent, memo, useRef} from 'react';
 
-// import Section from '../components/Layout/Section';
-// import Footer from '../components/Sections/Footer';
-// import Header from '../components/Sections/Header';
-// import {SectionId} from '../data/data';
+import Section from '../components/Layout/Section';
+import Footer from '../components/Sections/Footer';
+import Header from '../components/Sections/Header';
+import {SectionId} from '../data/data';
 
+interface MeetupData {
+  image: string;
+  description: string;
+}
 
+function onAddMeetup(data: MeetupData): MeetupData {
+  return data;
+}
 
+const Update: FC = memo(() => {
+  const imageInputRef = useRef<HTMLInputElement>(null);
+  const descriptionInputRef = useRef<HTMLInputElement>(null);
 
-//   function onAddMeetup(data: ) {
-//     return data;
-//   }
-  
-// const Update: FC = memo(() => {
+  function submitHandler(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
 
-//     const imageInputRef = useRef();
-//     const descriptionInputRef = useRef();
-  
-//     function submitHandler(event) {
-//       event.preventDefault();
+    if (imageInputRef.current && descriptionInputRef.current) {
+      const enteredImage = imageInputRef.current.value;
+      const enteredDescription = descriptionInputRef.current.value;
 
-//       const enteredImage = imageInputRef.current.value;
-//       const enteredDescription = descriptionInputRef.current.value;
-  
-//       const meetupData: Object = {
-//         image: enteredImage,
-//         description: enteredDescription,
-//       };
-  
-//       onAddMeetup(meetupData) {
-//         return meetupData;
-//       };
-    
-//   return (
-//     <>
-//       <Header />
-//       <Section className="bg-black" sectionId={SectionId.Update}>
-//         <div className={classNames('grid grid-cols-1 gap-y-4')}>
-//         <form  onSubmit={submitHandler}>
-//         <div >
-//           <label htmlFor='image'>Meetup Image</label>
-//           <input type='url' required id='image' ref={imageInputRef} />
-//         </div>
-//         <div>
-//           <label htmlFor='description'>Description</label>
-//           <input type='text' required id='address' ref={descriptionInputRef} /> 
-//         </div>
-//         <div >
-//           <button>Add Meetup</button>
-//         </div>
-//       </form>
-//         </div>
-//       </Section>
-//       <Footer />
-//     </>
-//   );
-// });
+      const meetupData: MeetupData = {
+        image: enteredImage,
+        description: enteredDescription,
+      };
 
-// Update.displayName = 'Update';
-// export default Update;
+      onAddMeetup(meetupData);
+    }
+  }
+
+  return (
+    <>
+      <Header />
+      <Section className="bg-black m-20" sectionId={SectionId.Update}>
+        <form onSubmit={submitHandler}>
+          <div className={classNames('flex flex-col items-center justify-centre ')}>
+            <div className="p-5">
+              <label className=" p-2 font-normal text-white" htmlFor="image">
+                Meetup Image
+              </label>
+              <input id="image" ref={imageInputRef} required type="url" />
+            </div>
+            <div>
+              <label className=" p-2 font-normal text-white" htmlFor="description">
+                Description
+              </label>
+              <input id="address" ref={descriptionInputRef} required type="text" />
+            </div>
+            <div className="bg-white m-10 p-2 font-normal">
+              <button type="submit">Add Meetup</button>
+            </div>
+          </div>
+        </form>
+      </Section>
+      <Footer />
+    </>
+  );
+});
+
+Update.displayName = 'Update';
+export default Update;
