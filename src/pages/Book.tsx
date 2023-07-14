@@ -20,7 +20,7 @@ const Book: FC = memo(() => {
             })}>
             <div className="flex flex-col items-center gap-y-5"></div>
             <h2 className="text-center text-2xl font-thin uppercase text-white">Book</h2>
-            <ul className="grid grid-cols-1  gap-2 sm:grid-cols-3 sm:gap-x-20">
+            <ul className="grid grid-cols-1  gap-2 sm:grid-cols-3 sm:gap-x-40 md:gap-x-50">
               {aboutItems.map(({label, text, Icon}, idx) => (
                 <li className="col-span-1 flex  gap-x-2" key={idx}>
                   {Icon && <Icon className="h-5 w-5 text-white" />}
@@ -32,21 +32,24 @@ const Book: FC = memo(() => {
             <div className="flex flex-wrap flex-col sm:flex-row justify-center ">
               {!!profileImageSrc && (
                 <div className="col-span-1 m-10 flex justify-center md:justify-start">
-                  <div className="md:h-60 relative h-60 w-40 overflow-hidden rounded-xl md:w-40">
+             
+                  <div className="relative overflow-hidden rounded-xl h-70 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage1} />
                   </div>
                 </div>
               )}
               {!!profileImageSrc && (
                 <div className="col-span-1 m-10 flex justify-center md:justify-start">
-                  <div className="md:h-60 relative h-60 w-40 overflow-hidden rounded-xl md:w-40">
+              
+              <div className="relative overflow-hidden rounded-xl h-70 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage2} />
                   </div>
                 </div>
               )}
               {!!profileImageSrc && (
                 <div className="col-span-1 m-10 flex justify-center md:justify-start">
-                  <div className="md:h-60 relative h-60 w-40 overflow-hidden rounded-xl md:w-40">
+                
+                <div className="relative overflow-hidden rounded-xl h-70 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage3} />
                   </div>
                 </div>

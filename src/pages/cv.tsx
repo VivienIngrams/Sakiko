@@ -12,12 +12,12 @@ const CV: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="bg-neutral-100" sectionId={SectionId.CV}>
+      <Section className="bg-black" sectionId={SectionId.CV}>
         <div className="flex w-full justify-center gap-x-4 py-20 ">
           {actions.map(({href, text, primary, Icon}) => (
             <a
               className={classNames(
-                'border-2bg-none flex gap-x-2 rounded-full bg-neutral-700/50 py-2 px-4 text-sm font-medium text-red-900 ring-offset-gray-700/80 hover:bg-neutral-400/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                ' flex gap-x-2 rounded-full bg-neutral-200/50 py-2 px-4 text-sm font-medium text-orange-900 border-2 border-orange-900 hover:bg-neutral-400/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
                 primary ? 'border-orange-900 ring-orange-900' : 'border-red-900 ring-red-900',
               )}
               href={href}
@@ -27,7 +27,7 @@ const CV: FC = memo(() => {
             </a>
           ))}
         </div>{' '}
-        <div className="flex flex-col divide-y-2 divide-neutral-300">
+        <div className="flex flex-col divide-y-2 text-white divide-neutral-300">
           <ResumeSection title="Work Experience">
             {experience.map((item, index) => (
               <TimelineItem item={item} key={`${item.title}-${index}`} />
@@ -72,7 +72,7 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
-        <h2 className="text-xl font-bold">{title}</h2>
+        <h2 className="text-xl text-neutral-400 font-bold">{title}</h2>
         <div className="flex items-center justify-center gap-x-2 md:justify-start">
           <span className="flex-1 text-sm font-medium italic sm:flex-none">{location}</span>
           <span>•</span>

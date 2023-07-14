@@ -28,7 +28,7 @@ const About: FC = memo(() => {
                     </div>
                   </div>
                 )}{' '}
-                <p className="prose prose-sm  p-5 max-w-sm text-center w text-base font-khand font-thin text-gray-300 sm:prose-base md:max-w-screen-xl">
+                <p className="prose prose-sm  p-5 max-w-sm text-center w text-base font-khand font-thin text-gray-300 sm:prose-base md:text-2xl md:max-w-screen-xl">
                   {description}
                 </p>
               </div>

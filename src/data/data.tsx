@@ -105,7 +105,7 @@ export const aboutData: About = {
   description2: `Born in Japan, I came to France to train at the École national supérieur de danse de Marseille and went on to dance with the CCN Ballet de Lorraine, Ballet national de Marseille, Ballet d'Europe, CCN de Caen, la Bazooka, Compagnie Sine Qua Non Art and model for Hermes and Heineken advertisement campaigns.`,
   aboutItems: [
     {label: 'Nationality', text: 'Japanese'},
-    {label: 'Date of Birth', text: '18th June 1989'},
+    {label: 'Age', text: '34'},
     {label: 'Height', text: '166cm'},
     {label: 'Weight', text: '47kg'},
     {label: 'Bust', text: '78cm'},
