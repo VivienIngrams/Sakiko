@@ -12,6 +12,7 @@ interface galleryData {
 }
 
 function onAddPhoto(data: galleryData): galleryData {
+  console.log(data);
   return data;
 }
 
@@ -32,6 +33,8 @@ const Update: FC = memo(() => {
       };
 
       onAddPhoto(galleryData);
+      imageInputRef.current.value = '';
+      descriptionInputRef.current.value = '';
     }
   }
 
