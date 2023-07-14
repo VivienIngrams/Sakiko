@@ -18,9 +18,18 @@ interface cvData {
   piece: string;
 }
 
-function onAddPhoto(data: galleryData): galleryData {
-  console.log(data);
-  return data;
+async function onAddPhoto(data: galleryData): Promise<galleryData> {
+  const response = await fetch('/api/update', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  const photoData = await response.json();
+  console.log(photoData);
+  return photoData;
 }
 
 function onAddExperience(data: cvData): cvData {
@@ -54,7 +63,6 @@ const Update: FC = memo(() => {
     }
   }
 
-
   function submitCvHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -82,59 +90,59 @@ const Update: FC = memo(() => {
     <>
       <Header />
       <Section className="m-20 bg-black" sectionId={SectionId.Update}>
-        <div className='flex justify-around'>
-        <form onSubmit={submitPhotoHandler}>
-          <h2 className="text-center text-2xl font-thin uppercase text-white">Gallery pages</h2>
-          <div className={classNames('flex flex-col items-end ')}>
-            <div className="p-5">
-              <label className=" p-2 font-normal text-white" htmlFor="image">
-                Photo Image
-              </label>
-              <input id="image" ref={imageInputRef} required type="url" />
+        <div className="flex flex-col justify-around sm:flex-row">
+          <form onSubmit={submitPhotoHandler}>
+            <h2 className="text-center text-2xl font-thin uppercase text-white">Gallery pages</h2>
+            <div className={classNames('flex flex-col items-end ')}>
+              <div className="p-5">
+                <label className=" p-2 font-normal text-white" htmlFor="image">
+                  Photo Image
+                </label>
+                <input id="image" ref={imageInputRef} required type="url" />
+              </div>
+              <div className="p-5">
+                <label className=" p-2 text-left font-normal text-white" htmlFor="category">
+                  Category
+                </label>
+                <input id="category" ref={categoryInputRef} required type="text" />
+              </div>
+              <div className="m-10 bg-neutral-400 p-2 rounded-2xl">
+                <button className="rounded-2xl" type="submit">Add Photo</button>
+              </div>
             </div>
-            <div className="p-5">
-              <label className=" p-2 text-left font-normal text-white" htmlFor="category">
-                Category
-              </label>
-              <input id="category" ref={categoryInputRef} required type="text" />
+          </form>
+          <form onSubmit={submitCvHandler}>
+            <h2 className="text-center text-2xl font-thin uppercase text-white">Work Experience</h2>
+            <div className={classNames('flex flex-col items-end')}>
+              <div className="p-5">
+                <label className=" p-2 font-normal text-white" htmlFor="company">
+                  Company
+                </label>
+                <input id="company" ref={companyInputRef} required type="text" />
+              </div>
+              <div className=" p-5">
+                <label className=" p-2 text-left font-normal text-white" htmlFor="role">
+                  Role
+                </label>
+                <input id="role" ref={roleInputRef} required type="text" />
+              </div>
+              <div className="p-5">
+                <label className=" p-2 text-left font-normal text-white" htmlFor="date">
+                  Date
+                </label>
+                <input id="date" ref={dateInputRef} required type="text" />
+              </div>
+              <div className="p-5">
+                <label className=" p-2 text-left font-normal text-white" htmlFor="piece">
+                  Piece
+                </label>
+                <input id="piece" ref={pieceInputRef} required type="text" />
+              </div>
+              <div className="m-10 bg-neutral-400 p-2 rounded-2xl ">
+                <button className="rounded-2xl" type="submit">Add Experience</button>
+              </div>
             </div>
-            <div className="m-10 bg-white p-2 font-normal">
-              <button type="submit">Add Photo</button>
-            </div>
-          </div>
-        </form>
-        <form onSubmit={submitCvHandler}>
-        <h2 className="text-center text-2xl font-thin uppercase text-white">Gallery pages</h2>
-          <div className={classNames('flex flex-col items-end')}>
-            <div className="p-5">
-              <label className=" p-2 font-normal text-white" htmlFor="company">
-                Company
-              </label>
-              <input id="company" ref={companyInputRef} required type="text" />
-            </div>
-            <div className=" p-5">
-              <label className=" p-2 text-left font-normal text-white" htmlFor="role">
-                Role
-              </label>
-              <input id="role" ref={roleInputRef} required type="text" />
-            </div>
-            <div className="p-5">
-              <label className=" p-2 text-left font-normal text-white" htmlFor="date">
-                Date
-              </label>
-              <input id="date" ref={dateInputRef} required type="text" />
-            </div>
-            <div className="p-5">
-              <label className=" p-2 text-left font-normal text-white" htmlFor="piece">
-                Piece
-              </label>
-              <input id="piece" ref={pieceInputRef} required type="text" />
-            </div>
-            <div className="m-10 bg-white p-2 font-normal">
-              <button type="submit">Add Experience</button>
-            </div>
-          </div>
-        </form>
+          </form>
         </div>
       </Section>
       <Footer />

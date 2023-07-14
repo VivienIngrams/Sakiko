@@ -1,19 +1,23 @@
 import {MongoClient} from 'mongodb';
 import {NextApiRequest, NextApiResponse} from 'next';
 
+
 interface Data {
   image: string;
   category: string;
 }
 
+const password: string = process.env.MONGODB_PASSWORD || ''; 
+const encodedPassword: string = encodeURIComponent(password);
+
+
 async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const data: Data = req.body;
 
-    const mongodbUrl: string = process.env.MONGDB_URL || ''; // Replace with the correct environment variable name
 
     try {
-      const client = await MongoClient.connect(mongodbUrl);
+      const client = await MongoClient.connect(`mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/?retryWrites=true&w=majority`);
       const db = client.db();
       const sakikoCollection = db.collection('sakiko');
       

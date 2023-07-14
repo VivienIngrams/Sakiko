@@ -1,9 +1,7 @@
 /* eslint-env node */
 require('dotenv').config();
 
-module.exports = {
- 
-};
+
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
   webpack: config => {
@@ -35,7 +33,7 @@ const nextConfig = {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
   },
   env: {
-    MONGODB_URL: process.env.MONGODB_URL,
+    MONGODB_PASSWORD: process.env.MONGODB_PASSWORD,
     
   },
 };
