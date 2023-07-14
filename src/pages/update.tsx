@@ -6,12 +6,12 @@ import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
 import {SectionId} from '../data/data';
 
-interface MeetupData {
+interface galleryData {
   image: string;
   description: string;
 }
 
-function onAddMeetup(data: MeetupData): MeetupData {
+function onAddPhoto(data: galleryData): galleryData {
   return data;
 }
 
@@ -26,12 +26,12 @@ const Update: FC = memo(() => {
       const enteredImage = imageInputRef.current.value;
       const enteredDescription = descriptionInputRef.current.value;
 
-      const meetupData: MeetupData = {
+      const galleryData: galleryData = {
         image: enteredImage,
         description: enteredDescription,
       };
 
-      onAddMeetup(meetupData);
+      onAddPhoto(galleryData);
     }
   }
 
@@ -43,7 +43,7 @@ const Update: FC = memo(() => {
           <div className={classNames('flex flex-col items-center justify-centre ')}>
             <div className="p-5">
               <label className=" p-2 font-normal text-white" htmlFor="image">
-                Meetup Image
+                Photo Image
               </label>
               <input id="image" ref={imageInputRef} required type="url" />
             </div>
@@ -54,7 +54,7 @@ const Update: FC = memo(() => {
               <input id="address" ref={descriptionInputRef} required type="text" />
             </div>
             <div className="bg-white m-10 p-2 font-normal">
-              <button type="submit">Add Meetup</button>
+              <button type="submit">Add Photo</button>
             </div>
           </div>
         </form>
