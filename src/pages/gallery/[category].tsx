@@ -14,7 +14,7 @@ const Model: FC = memo(() => {
 
   let section: GalleryItem[] = [];
 
-  switch (router.query.photos) {
+  switch (router.query.category) {
     case 'dance':
       section = galleryItemsDance;
       break;
@@ -34,7 +34,7 @@ const Model: FC = memo(() => {
       <Header />
       <Section className="bg-black" sectionId={SectionId.Gallery}>
         <div className="mb-20 flex flex-col gap-y-8">
-          <h2 className="self-center text-xl font-thin uppercase text-white">{router.query.photos}</h2>
+          <h2 className="self-center text-xl font-thin uppercase text-white">{router.query.category}</h2>
           <div className=" w-full columns-2 md:columns-3 lg:columns-4">
             {section.map((item, index) => {
               const {image} = item;
@@ -42,7 +42,7 @@ const Model: FC = memo(() => {
                 <div className="pb-6" key={`${index}`}>
                   <div
                     className={classNames(
-                      'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
+                      'relative h-max w-full overflow-hidden shadow-lg shadow-black/30 lg:shadow-xl',
                     )}>
                     <Image alt="Sakiko" layout="responsive" placeholder="blur" src={image} />
                     {/* <ItemOverlay item={item} /> */}

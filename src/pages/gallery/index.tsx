@@ -33,7 +33,7 @@ const Gallery: FC = memo(() => {
               <Link href="/gallery/dance" passHref>
                 <a className="flex flex-col justify-center">
                   <p className="text-center text-2xl font-thin uppercase text-white">Dance</p>
-                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden  md:w-80">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={danceImage} />
                   </div>
                 </a>
@@ -43,7 +43,7 @@ const Gallery: FC = memo(() => {
               <Link href="/gallery/hands" passHref>
                 <a className="flex flex-col justify-center">
                   <p className="text-center text-2xl font-thin uppercase text-white">Hands</p>
-                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden  md:w-80">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={handsImage} />
                   </div>
                 </a>
@@ -53,7 +53,7 @@ const Gallery: FC = memo(() => {
               <Link href="/gallery/model" passHref>
                 <a className="flex flex-col justify-center">
                   <p className="text-center text-2xl font-thin uppercase text-white">Model</p>
-                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden  md:w-80">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={modelImage} />
                   </div>
                 </a>
@@ -63,7 +63,7 @@ const Gallery: FC = memo(() => {
               <Link href="/gallery/stage" passHref>
                 <a className="flex flex-col justify-center">
                   <p className="text-center text-2xl font-thin uppercase text-white">On Stage</p>
-                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden  md:w-80">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={stageImage} />
                   </div>
                 </a>
@@ -73,7 +73,7 @@ const Gallery: FC = memo(() => {
               <Link href="/gallery/videos" passHref>
                 <a className="flex flex-col justify-center">
                   <p className="text-center text-2xl font-thin uppercase text-white">Videos</p>
-                  <div className="md:h-100 relative h-60 w-40 overflow-hidden rounded-xl md:w-80">
+                  <div className="md:h-100 relative h-60 w-40 overflow-hidden  md:w-80">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={videosImage} />
                   </div>
                 </a>

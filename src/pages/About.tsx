@@ -23,7 +23,7 @@ const About: FC = memo(() => {
               <div className="flex flex-col max-w">
                 {!!profileImageSrc && (
                   <div className="col-span-1 m-5 flex justify-center ">
-                    <div className="relative h-60 w-60 overflow-hidden rounded-xl md:h-80 md:w-80">
+                    <div className="relative h-60 w-60 overflow-hidden  md:h-80 md:w-80">
                       <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImageSrc} />
                     </div>
                   </div>
