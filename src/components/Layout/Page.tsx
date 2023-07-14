@@ -21,7 +21,6 @@ const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
         {/* <link href="/icon.svg" rel="icon" type="image/svg+xml" /> */}
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
         <link href="/site.webmanifest" rel="manifest" />
-        {/* <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Khand:wght@300;400&family=Urbanist:ital,wght@1,200&display=swap" rel="stylesheet"/> */}
 
         
 

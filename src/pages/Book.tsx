@@ -33,7 +33,7 @@ const Book: FC = memo(() => {
               {!!profileImageSrc && (
                 <div className="col-span-1 m-10 flex justify-center md:justify-start">
              
-                  <div className="relative overflow-hidden rounded-xl h-70 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
+                  <div className="relative overflow-hidden rounded-xl h-60 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage1} />
                   </div>
                 </div>
@@ -41,7 +41,7 @@ const Book: FC = memo(() => {
               {!!profileImageSrc && (
                 <div className="col-span-1 m-10 flex justify-center md:justify-start">
               
-              <div className="relative overflow-hidden rounded-xl h-70 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
+              <div className="relative overflow-hidden rounded-xl h-60 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage2} />
                   </div>
                 </div>
@@ -49,7 +49,7 @@ const Book: FC = memo(() => {
               {!!profileImageSrc && (
                 <div className="col-span-1 m-10 flex justify-center md:justify-start">
                 
-                <div className="relative overflow-hidden rounded-xl h-70 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
+                <div className="relative overflow-hidden rounded-xl h-60 w-40  sm:h-80 sm:w-50 md:w-60 md:h-90 xl:h-120 xl:w-70">
                     <Image alt="about-me-image" layout="fill" objectFit="cover" src={bookImage3} />
                   </div>
                 </div>

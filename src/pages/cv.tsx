@@ -17,8 +17,8 @@ const CV: FC = memo(() => {
           {actions.map(({href, text, primary, Icon}) => (
             <a
               className={classNames(
-                ' flex gap-x-2 rounded-full bg-neutral-200/50 py-2 px-4 text-sm font-medium text-orange-900 border-2 border-orange-900 hover:bg-neutral-400/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                primary ? 'border-orange-900 ring-orange-900' : 'border-red-900 ring-red-900',
+                ' flex gap-x-2 rounded-full bg-neutral-200/50 py-2 px-4 text-sm font-medium text-red-900 border-2 border-red-900 hover:bg-neutral-400/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                primary ? 'border-red-900 ring-red-900' : 'border-red-900 ring-red-900',
               )}
               href={href}
               key={text}>
@@ -53,8 +53,8 @@ const ResumeSection: FC<PropsWithChildren<{title: string}>> = memo(({title, chil
     <div className="grid grid-cols-1 gap-y-4 py-8 first:pt-0 last:pb-0  md:grid-cols-4">
       <div className="col-span-1 flex justify-center md:justify-start">
         <div className="relative mb-5 h-max">
-          <h2 className="text-xl font-bold uppercase text-orange-800 ">{title}</h2>
-          <span className="absolute inset-x-0 -bottom-1 border-b-2 border-orange-800" />
+          <h2 className="text-xl font-bold uppercase text-red-800 ">{title}</h2>
+          <span className="absolute inset-x-0 -bottom-1 border-b-2 border-red-800" />
         </div>
       </div>
       <div className="col-span-1 flex flex-col md:col-span-3">{children}</div>
