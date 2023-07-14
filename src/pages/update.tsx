@@ -90,7 +90,6 @@ const Update: FC = memo(() => {
               <label className=" p-2 font-normal text-white" htmlFor="image">
                 Photo Image
               </label>
-
               <input id="image" ref={imageInputRef} required type="url" />
             </div>
             <div className="p-5">
