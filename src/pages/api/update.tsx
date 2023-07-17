@@ -25,9 +25,9 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
      try {
        const client = await MongoClient.connect(`mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/photo?retryWrites=true&w=majority`);
        const db = client.db();
-       const sakikoCollection = db.collection('sakiko');
+       const photoCollection = db.collection('photo');
        
-       const result = await sakikoCollection.insertOne({data});
+       const result = await photoCollection.insertOne({data});
  
        console.log(result);
  
@@ -42,9 +42,9 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
       const client = await MongoClient.connect(`mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/cv?retryWrites=true&w=majority`);
       const db = client.db();
-      const sakikoCollection = db.collection('sakiko');
+      const cvCollection = db.collection('cv');
       
-      const result = await sakikoCollection.insertOne({data});
+      const result = await cvCollection.insertOne({data});
 
       console.log(result);
 

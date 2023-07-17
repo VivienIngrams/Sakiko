@@ -76,9 +76,9 @@ export interface GalleryItem {
  */
 export interface TimelineItem {
   date: string;
-  location: string;
+  role: string;
   title: string;
-  content: JSX.Element;
+  piece: JSX.Element;
 }
 
 /**

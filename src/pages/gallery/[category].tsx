@@ -61,3 +61,43 @@ const Model: FC = memo(() => {
 Model.displayName = 'Model';
 export default Model;
 
+
+// export async function getStaticPaths() {
+//   return {
+//   fallback: false,
+//     paths: [
+//       {
+//         params: {
+//           category: 'dance',
+//         },
+//       },
+//       {
+//         params: {
+//           category: 'model',
+//         },
+//       },
+//       {
+//         params: {
+//           category: 'stage',
+//         },
+//       },
+//       {
+//         params: {
+//           category: 'hands',
+//         },
+//       },
+//     ],
+//   };
+// }
+
+// export async function getStaticProps() {
+// // fetch data from mongodb
+//   return {
+//     props: {
+//       photoData: {
+//         image: 'https://agendaculturalporto.org/wp-content/uploads/2023/04/Van-Gogh-Alfandega-do-Porto.jpg',
+//         category: 'dance',
+//       }
+//     }
+//   }
+// }
