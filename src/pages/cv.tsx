@@ -45,6 +45,8 @@ const CV: FC = memo(() => {
   );
 });
 
+// ResumeSection = Modelling, Dance, Films, Video clips
+
 CV.displayName = 'Resume';
 export default CV;
 

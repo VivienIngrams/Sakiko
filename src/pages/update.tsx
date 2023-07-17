@@ -32,9 +32,18 @@ async function onAddPhoto(data: galleryData): Promise<galleryData> {
   return photoData;
 }
 
-function onAddExperience(data: cvData): cvData {
-  console.log(data);
-  return data;
+async function onAddExperience(data: cvData): Promise<cvData> {
+  const response = await fetch('/api/update', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  const cvData = await response.json();
+  console.log(cvData);
+  return cvData;
 }
 
 const Update: FC = memo(() => {
