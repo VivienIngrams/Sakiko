@@ -20,7 +20,7 @@ const CV: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="bg-violet-950" sectionId={SectionId.CV}>
+      <Section className="bg-black" sectionId={SectionId.CV}>
         <div className="flex w-full justify-center gap-x-4 py-20 ">
           {actions.map(({href, text, primary, Icon}) => (
             <a
@@ -103,16 +103,16 @@ export async function getStaticProps() {
   const cvCollection = db.collection('cv');
 
   const cvData = await cvCollection.find().toArray();
-
+console.log(cvData);
   client.close();
 
   return {
     props: {
       cvData: cvData.map((cvEntry) => ({
-        company: cvEntry.company,
-        role: cvEntry.role,
-        date: cvEntry.date,
-        piece: cvEntry.piece,
+        company: cvEntry.data.company,
+        role: cvEntry.data.role,
+        date: cvEntry.data.date,
+        piece: cvEntry.data.piece,
       }))
     },
     revalidate: 10000
