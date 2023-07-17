@@ -271,30 +271,30 @@ export const galleryItemsStage: GalleryItem[] = [
 export const education: TimelineItem[] = [
   {
     date: '2006',
-    location: 'France',
+    role: 'France',
     title: "L'Ecole Nationale Supérieure de Danse de Marseille",
-    content: <p></p>,
+    piece: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
     date: '2022 - Present',
-    location: 'Dancer',
+    role: 'Dancer',
     title: 'CCN de Caen',
-    content: <p>3 works for 12</p>,
+    piece: <p>3 works for 12</p>,
   },
   {
     date: '2021 - Present',
-    location: 'Dancer',
+    role: 'Dancer',
     title: 'Compagnie Sine Qua Non Art',
-    content: <p>YUREI</p>,
+    piece: <p>YUREI</p>,
   },
   {
     date: '2020 - Present',
-    location: 'Dancer',
+    role: 'Dancer',
     title: 'Compagnie La Bazooka',
-    content: (
+    piece: (
       <div>
         <p>Pillowgraphies</p>
         <p>Monstres indiens</p>
@@ -303,9 +303,9 @@ export const experience: TimelineItem[] = [
   },
   {
     date: '2020',
-    location: 'Dancer',
+    role: 'Dancer',
     title: 'Gisèle Vienne and Etienne Bideau-Ray',
-    content: (
+    piece: (
       <div>
         <p>Showroom Dummies #4</p>
       </div>
@@ -313,9 +313,9 @@ export const experience: TimelineItem[] = [
   },
   {
     date: '2019',
-    location: 'Dancer',
+    role: 'Dancer',
     title: 'Chatha',
-    content: (
+    piece: (
       <div>
         <p>L'Amour sourcier</p>
         <p>Narcose</p>
@@ -325,9 +325,9 @@ export const experience: TimelineItem[] = [
 
   {
     date: 'March 2008 - February 2019',
-    location: 'Dancer',
+    role: 'Dancer',
     title: 'CCN Ballet de Lorraine',
-    content: (
+    piece: (
       <div>
         <p>« Opal Loop/ Cloud installation #72503 » : Trisha Brown</p>
         <p>« Shaker Loops » : Andonis Foniadakis</p>
@@ -360,15 +360,15 @@ export const experience: TimelineItem[] = [
   },
   {
     date: '2008',
-    location: 'Dancer',
+    role: 'Dancer',
     title: "Ballet d'Europe",
-    content: <p>Mireille</p>,
+    piece: <p>Mireille</p>,
   },
   {
     date: '2007',
-    location: 'Apprentice dancer',
+    role: 'Apprentice dancer',
     title: 'Ballet National de Marseille',
-    content: <p>Concerto Barocco</p>,
+    piece: <p>Concerto Barocco</p>,
   },
 ];
 

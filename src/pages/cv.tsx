@@ -87,7 +87,8 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
           <span className="flex-1 text-sm sm:flex-none">{date}</span>
         </div>
         <h2 className="text-xl font-bold text-neutral-400">{title}</h2>
-        {piece}
+        <div> {piece}</div>
+       
       </div>
     </div>
   );
