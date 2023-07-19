@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import {MongoClient} from 'mongodb';
+// import {MongoClient} from 'mongodb';
 import Image from 'next/image';
 import {useRouter} from 'next/router';
 import {FC, memo} from 'react';
@@ -10,20 +10,20 @@ import Header from '../../components/Sections/Header';
 import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsStage, SectionId} from '../../data/data';
 import {GalleryItem} from '../../data/dataDef';
 
-const password: string = process.env.MONGODB_PASSWORD || '';
-const encodedPassword: string = encodeURIComponent(password);
+// const password: string = process.env.MONGODB_PASSWORD || '';
+// const encodedPassword: string = encodeURIComponent(password);
 
-interface PhotoProps {
-  photoData: {
-    image: string;
-    category: string;
-    id: string;
-  }[];
-}
+// interface PhotoProps {
+//   photoData: {
+//     image: string;
+//     category: string;
+//     id: string;
+//   }[];
+// }
 
-const Gallery: FC<PhotoProps> = memo((props) => {
-  console.log(props.photoData);
-// const Gallery: FC = memo(() => {
+// const Gallery: FC<PhotoProps> = memo((props) => {
+//   console.log(props.photoData);
+const Gallery: FC = memo(() => {
 
   const router = useRouter();
 
@@ -77,53 +77,52 @@ Gallery.displayName = 'Gallery';
 export default Gallery;
 
 
-export async function getStaticPaths() {
-  const client = await MongoClient.connect(
-          `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/photo?retryWrites=true&w=majority`,
-        );
-        const db = client.db();
-        const photoCollection = db.collection('photo');
+// export async function getStaticPaths() {
+//   const client = await MongoClient.connect(
+//           `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/photo?retryWrites=true&w=majority`,
+//         );
+//         const db = client.db();
+//         const photoCollection = db.collection('photo');
 
-        const photos = await photoCollection.find().toArray();
+//         const photos = await photoCollection.find().toArray();
 
-      client.close();
+//       client.close();
 
-  return {
-  fallback: false,
-    paths: photos.map(photo => ({params: {category: photo.data.category}}))
-  };
-}
+//   return {
+//   fallback: false,
+//     paths: photos.map(photo => ({params: {category: photo.data.category}}))
+//   };
+// }
 
-export async function getStaticProps() {
-  try {
-    const client = await MongoClient.connect(
-      `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/photo?retryWrites=true&w=majority`,
-    );
-    const db = client.db();
-    const photoCollection = db.collection('photo');
+// export async function getStaticProps() {
+//   try {
+//     const client = await MongoClient.connect(
+//       `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/photo?retryWrites=true&w=majority`,
+//     );
+//     const db = client.db();
+//     const photoCollection = db.collection('photo');
 
-    const photoData = await photoCollection.find().toArray();
+//     const photoData = await photoCollection.find().toArray();
 
-    client.close();
+//     client.close();
 
-    return {
-      props: {
-        photoData: photoData.map(photo => ({
-          image: photo.data.image,
-          category: photo.data.category,
+//     return {
+//       props: {
+//         photoData: photoData.map(photo => ({
+//           image: photo.data.image,
+//           category: photo.data.category,
+//           id: photo._id.toString(),
+//         })),
+//       },
+//       revalidate: 10000,
+//     };
+//   } catch (error) {
+//     console.error('Error fetching data from MongoDB:', error);
 
-          id: photo._id.toString(),
-        })),
-      },
-      revalidate: 10000,
-    };
-  } catch (error) {
-    console.error('Error fetching data from MongoDB:', error);
-
-    return {
-      props: {
-        photoData: [],
-      },
-    };
-  }
-}
+//     return {
+//       props: {
+//         photoData: [],
+//       },
+//     };
+//   }
+// }

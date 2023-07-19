@@ -18,7 +18,7 @@ import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsSta
 
 const danceImage = galleryItemsDance[3].image;
 const handsImage = galleryItemsHands[0].image;
-const stageImage = galleryItemsStage[9].image;
+const stageImage = galleryItemsStage[11].image;
 const videosImage = galleryItemsDance[1].image;
 const modelImage = galleryItemsModel[5].image;
 
