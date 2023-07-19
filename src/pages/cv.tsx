@@ -9,14 +9,25 @@ import {education, experience, heroData, SectionId} from '../data/data';
 
 const {actions} = heroData;
 
-
-const password: string = process.env.MONGODB_PASSWORD || ''; 
+const password: string = process.env.MONGODB_PASSWORD || '';
 const encodedPassword: string = encodeURIComponent(password);
-
 
 // ResumeSection = Modelling, Dance, Films, Video clips
 
-const CV: FC = memo(() => {
+interface CVProps {
+  cvData: {
+    company: string;
+    role: string;
+    date: string;
+    piece: string;
+    id: string;
+  }[];
+}
+
+
+const CV: FC<CVProps> = memo((props) => {
+  console.log(`props : ${props.cvData}`);
+
   return (
     <>
       <Header />
@@ -37,13 +48,13 @@ const CV: FC = memo(() => {
         </div>{' '}
         <div className="flex flex-col divide-y-2 divide-neutral-300 text-white">
           <ResumeSection title="Work Experience">
-            {experience.map((item, index) => (
-              <TimelineItem item={item} key={`${item.title}-${index}`} />
+            {props.cvData.map((item, index) => (
+              <TimelineItem item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
           <ResumeSection title="Training">
             {education.map((item, index) => (
-              <TimelineItem item={item} key={`${item.title}-${index}`} />
+              <TimelineItem item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
         </div>
@@ -72,12 +83,11 @@ const ResumeSection: FC<PropsWithChildren<{title: string}>> = memo(({title, chil
 
 ResumeSection.displayName = 'ResumeSection';
 
-
 // eslint-disable-next-line import/first
 import {TimelineItem} from '../data/dataDef';
 
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
-  const {title, date, role, piece} = item;
+  const {company, date, role, piece} = item;
   return (
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
@@ -86,9 +96,8 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
           <span>•</span>
           <span className="flex-1 text-sm sm:flex-none">{date}</span>
         </div>
-        <h2 className="text-xl font-bold text-neutral-400">{title}</h2>
+        <h2 className="text-xl font-bold text-neutral-400">{company}</h2>
         <div> {piece}</div>
-       
       </div>
     </div>
   );
@@ -97,24 +106,26 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
 TimelineItem.displayName = 'TimelineItem';
 
 export async function getStaticProps() {
-
-  const client = await MongoClient.connect(`mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/cv?retryWrites=true&w=majority`);
+  const client = await MongoClient.connect(
+    `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/cv?retryWrites=true&w=majority`,
+  );
   const db = client.db();
   const cvCollection = db.collection('cv');
 
   const cvData = await cvCollection.find().toArray();
-console.log(cvData);
+  console.log(cvData);
   client.close();
 
   return {
     props: {
-      cvData: cvData.map((cvEntry) => ({
+      cvData: cvData.map(cvEntry => ({
         company: cvEntry.data.company,
         role: cvEntry.data.role,
         date: cvEntry.data.date,
         piece: cvEntry.data.piece,
-      }))
+        id: cvEntry._id.toString(),
+      })),
     },
-    revalidate: 10000
+    revalidate: 10000,
   };
 }

@@ -82,7 +82,7 @@ export const heroData: Hero = {
   name: `SAKIKO OISHI`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer  Choreographer  Model  Actress</p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer Choreographer Model Actress</p>
     </>
   ),
   actions: [
@@ -270,10 +270,10 @@ export const galleryItemsStage: GalleryItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: '2006',
+    date: '2004-2006',
     role: 'France',
-    title: "L'Ecole Nationale Supérieure de Danse de Marseille",
-    piece: <p></p>,
+    company: "L'Ecole Nationale Supérieure de Danse de Marseille",
+    piece: '',
   },
 ];
 
@@ -281,94 +281,84 @@ export const experience: TimelineItem[] = [
   {
     date: '2022 - Present',
     role: 'Dancer',
-    title: 'CCN de Caen',
-    piece: <p>3 works for 12</p>,
+    company: 'CCN de Caen',
+    piece: '3 works for 12',
   },
   {
     date: '2021 - Present',
     role: 'Dancer',
-    title: 'Compagnie Sine Qua Non Art',
-    piece: <p>YUREI</p>,
+    company: 'Compagnie Sine Qua Non Art',
+    piece: 'YUREI',
   },
   {
     date: '2020 - Present',
     role: 'Dancer',
-    title: 'Compagnie La Bazooka',
-    piece: (
-      <div>
-        <p>Pillowgraphies</p>
-        <p>Monstres indiens</p>
-      </div>
-    ),
+    company: 'Compagnie La Bazooka',
+    piece:
+    
+        "Pillowgraphies, Monstres indiens"
+      
+   
   },
   {
     date: '2020',
     role: 'Dancer',
-    title: 'Gisèle Vienne and Etienne Bideau-Ray',
-    piece: (
-      <div>
-        <p>Showroom Dummies #4</p>
-      </div>
-    ),
+    company: 'Gisèle Vienne and Etienne Bideau-Ray',
+    piece: 
+    
+       "Showroom Dummies #4"
+    
+   
   },
   {
     date: '2019',
     role: 'Dancer',
-    title: 'Chatha',
-    piece: (
-      <div>
-        <p>L'Amour sourcier</p>
-        <p>Narcose</p>
-      </div>
-    ),
+    company: 'Chatha',
+    piece: "L'Amour sourcier, Narcose",
   },
 
   {
     date: 'March 2008 - February 2019',
     role: 'Dancer',
-    title: 'CCN Ballet de Lorraine',
-    piece: (
-      <div>
-        <p>« Opal Loop/ Cloud installation #72503 » : Trisha Brown</p>
-        <p>« Shaker Loops » : Andonis Foniadakis</p>
-        <p>« Murmuration » : Rachid Ouramdane</p>
-        <p>« ELEMENTEN l - Room » : Cindy Van Aker</p>
-        <p>« Objets re-trouvés » Mathilde Monnier</p>
-        <p>« Transposition #1,2 » : Emanuel Gat</p>
-        <p>« Vertiginous»,« The Ville Parody of Address » : William Forsythe</p>
-        <p>« Fabrication » « Sounddance » « Rain Forest » « Duets » : Merce Cunningham</p>
-        <p>« In The Upper Room » « Nine Sinatra Songs » : Twyla tharp</p>
-        <p>« Sketches from Chronicle » : Martha Graham</p>
-        <p>« Devoted » : Cecilia Bengolea and François Chaignaud</p>
-        <p>« Cela nous concerne tous » : Miguel Gutierrez</p>
-        <p>« HOK solo pour ensemble » : Alban Richard</p>
-        <p>« Record of ancient things » : Petter Jacobsson and Thomas Caley</p>
-        <p>« Corps De Ballet » : Noé Soulier</p>
-        <p>« Hedda » : Ingun Bjornsgaard</p>
-        <p>« Showroomdummises #3 » : Gisele Vienne</p>
-        <p>« Mariage » : Tero Saarinen</p>
-        <p> « Le Sacre du printemps » : Ginette Laurin</p>
-        <p>« Rave » : Karole Armitage</p>
-        <p> « Petrouchka » : Michel Fokine</p>
-        <p> « Les noces » : Bronislava Nijinska </p>
-        <p> « Tragic love » : Steven Petronio</p>
-        <p> « Hymnen » : Didier Deschamps and Lia Rodriguez</p>
-        <p> « Organic beat » : Paolo Ribeiro</p>
-        <p> « L’après-midi d’un faune » : Michel Fokine</p>
-      </div>
-    ),
+    company: 'CCN Ballet de Lorraine',
+    piece: 
+     
+       " Trisha Brown, Andonis Foniadakis, Rachid Ouramdane,Cindy Van Aker, Mathilde Monnier"
+        // « Transposition #1,2 » : Emanuel Gat
+        // « Vertiginous»,« The Ville Parody of Address » : William Forsythe
+        // « Fabrication » « Sounddance » « Rain Forest » « Duets » : Merce Cunningham
+        // « In The Upper Room » « Nine Sinatra Songs » : Twyla tharp
+        // « Sketches from Chronicle » : Martha Graham
+        // « Devoted » : Cecilia Bengolea and François Chaignaud
+        // « Cela nous concerne tous » : Miguel Gutierrez
+        // « HOK solo pour ensemble » : Alban Richard
+        // « Record of ancient things » : Petter Jacobsson and Thomas Caley
+        // « Corps De Ballet » : Noé Soulier
+        // « Hedda » : Ingun Bjornsgaard
+        // « Showroomdummises #3 » : Gisele Vienne
+        // « Mariage » : Tero Saarinen
+        //  « Le Sacre du printemps » : Ginette Laurin
+        // « Rave » : Karole Armitage
+        //  « Petrouchka » : Michel Fokine
+        //  « Les noces » : Bronislava Nijinska 
+        //  « Tragic love » : Steven Petronio
+        //  « Hymnen » : Didier Deschamps and Lia Rodriguez
+        //  « Organic beat » : Paolo Ribeiro
+        //  « L’après-midi d’un faune » : Michel Fokine"
+     
+    
   },
   {
     date: '2008',
     role: 'Dancer',
-    title: "Ballet d'Europe",
-    piece: <p>Mireille</p>,
+    company: "Ballet d'Europe",
+    piece:"Mireille",
   },
   {
     date: '2007',
     role: 'Apprentice dancer',
-    title: 'Ballet National de Marseille',
-    piece: <p>Concerto Barocco</p>,
+    company: 'Ballet National de Marseille',
+    piece: "Concerto Barocco",
   },
 ];
 
