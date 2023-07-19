@@ -31,7 +31,7 @@ const CV: FC<CVProps> = memo((props) => {
   return (
     <>
       <Header />
-      <Section className="bg-black" sectionId={SectionId.CV}>
+      <Section className="bg-[#190c41]" sectionId={SectionId.CV}>
         <div className="flex w-full justify-center gap-x-4 py-20 ">
           {actions.map(({href, text, primary, Icon}) => (
             <a
