@@ -209,6 +209,7 @@ export const galleryItemsHands: GalleryItem[] = [
   {
     image: porfolioImage22,
   },
+
 ];
 export const galleryItemsStage: GalleryItem[] = [
   {

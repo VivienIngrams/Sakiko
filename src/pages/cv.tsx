@@ -106,26 +106,36 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
 TimelineItem.displayName = 'TimelineItem';
 
 export async function getStaticProps() {
-  const client = await MongoClient.connect(
-    `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/cv?retryWrites=true&w=majority`,
-  );
-  const db = client.db();
-  const cvCollection = db.collection('cv');
+  try {
+    const client = await MongoClient.connect(
+      `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/cv?retryWrites=true&w=majority`,
+    );
+    const db = client.db();
+    const cvCollection = db.collection('cv');
 
-  const cvData = await cvCollection.find().toArray();
-  console.log(cvData);
-  client.close();
+    const cvData = await cvCollection.find().toArray();
+    console.log(cvData);
+    client.close();
 
-  return {
-    props: {
-      cvData: cvData.map(cvEntry => ({
-        company: cvEntry.data.company,
-        role: cvEntry.data.role,
-        date: cvEntry.data.date,
-        piece: cvEntry.data.piece,
-        id: cvEntry._id.toString(),
-      })),
-    },
-    revalidate: 10000,
-  };
+    return {
+      props: {
+        cvData: cvData.map(cvEntry => ({
+          company: cvEntry.data.company,
+          role: cvEntry.data.role,
+          date: cvEntry.data.date,
+          piece: cvEntry.data.piece,
+          id: cvEntry._id.toString(),
+        })),
+      },
+      revalidate: 10000,
+    };
+  } catch (error) {
+    console.error('Error fetching data from MongoDB:', error);
+
+    return {
+      props: {
+        cvData: [],
+      },
+    };
+  }
 }
