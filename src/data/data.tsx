@@ -277,90 +277,90 @@ export const education: TimelineItem[] = [
   },
 ];
 
-export const experience: TimelineItem[] = [
-  {
-    date: '2022 - Present',
-    role: 'Dancer',
-    company: 'CCN de Caen',
-    piece: '3 works for 12',
-  },
-  {
-    date: '2021 - Present',
-    role: 'Dancer',
-    company: 'Compagnie Sine Qua Non Art',
-    piece: 'YUREI',
-  },
-  {
-    date: '2020 - Present',
-    role: 'Dancer',
-    company: 'Compagnie La Bazooka',
-    piece:
+// export const experience: TimelineItem[] = [
+//   {
+//     date: '2022 - Present',
+//     role: 'Dancer',
+//     company: 'CCN de Caen',
+//     piece: '3 works for 12',
+//   },
+//   {
+//     date: '2021 - Present',
+//     role: 'Dancer',
+//     company: 'Compagnie Sine Qua Non Art',
+//     piece: 'YUREI',
+//   },
+//   {
+//     date: '2020 - Present',
+//     role: 'Dancer',
+//     company: 'Compagnie La Bazooka',
+//     piece:
     
-        "Pillowgraphies, Monstres indiens"
+//         "Pillowgraphies, Monstres indiens"
       
    
-  },
-  {
-    date: '2020',
-    role: 'Dancer',
-    company: 'Gisèle Vienne and Etienne Bideau-Ray',
-    piece: 
+//   },
+//   {
+//     date: '2020',
+//     role: 'Dancer',
+//     company: 'Gisèle Vienne and Etienne Bideau-Ray',
+//     piece: 
     
-       "Showroom Dummies #4"
+//        "Showroom Dummies #4"
     
    
-  },
-  {
-    date: '2019',
-    role: 'Dancer',
-    company: 'Chatha',
-    piece: "L'Amour sourcier, Narcose",
-  },
+//   },
+//   {
+//     date: '2019',
+//     role: 'Dancer',
+//     company: 'Chatha',
+//     piece: "L'Amour sourcier, Narcose",
+//   },
 
-  {
-    date: 'March 2008 - February 2019',
-    role: 'Dancer',
-    company: 'CCN Ballet de Lorraine',
-    piece: 
+//   {
+//     date: 'March 2008 - February 2019',
+//     role: 'Dancer',
+//     company: 'CCN Ballet de Lorraine',
+//     piece: 
      
-       " Trisha Brown, Andonis Foniadakis, Rachid Ouramdane,Cindy Van Aker, Mathilde Monnier"
-        // « Transposition #1,2 » : Emanuel Gat
-        // « Vertiginous»,« The Ville Parody of Address » : William Forsythe
-        // « Fabrication » « Sounddance » « Rain Forest » « Duets » : Merce Cunningham
-        // « In The Upper Room » « Nine Sinatra Songs » : Twyla tharp
-        // « Sketches from Chronicle » : Martha Graham
-        // « Devoted » : Cecilia Bengolea and François Chaignaud
-        // « Cela nous concerne tous » : Miguel Gutierrez
-        // « HOK solo pour ensemble » : Alban Richard
-        // « Record of ancient things » : Petter Jacobsson and Thomas Caley
-        // « Corps De Ballet » : Noé Soulier
-        // « Hedda » : Ingun Bjornsgaard
-        // « Showroomdummises #3 » : Gisele Vienne
-        // « Mariage » : Tero Saarinen
-        //  « Le Sacre du printemps » : Ginette Laurin
-        // « Rave » : Karole Armitage
-        //  « Petrouchka » : Michel Fokine
-        //  « Les noces » : Bronislava Nijinska 
-        //  « Tragic love » : Steven Petronio
-        //  « Hymnen » : Didier Deschamps and Lia Rodriguez
-        //  « Organic beat » : Paolo Ribeiro
-        //  « L’après-midi d’un faune » : Michel Fokine"
+//        " Trisha Brown, Andonis Foniadakis, Rachid Ouramdane,Cindy Van Aker, Mathilde Monnier"
+//         // « Transposition #1,2 » : Emanuel Gat
+//         // « Vertiginous»,« The Ville Parody of Address » : William Forsythe
+//         // « Fabrication » « Sounddance » « Rain Forest » « Duets » : Merce Cunningham
+//         // « In The Upper Room » « Nine Sinatra Songs » : Twyla tharp
+//         // « Sketches from Chronicle » : Martha Graham
+//         // « Devoted » : Cecilia Bengolea and François Chaignaud
+//         // « Cela nous concerne tous » : Miguel Gutierrez
+//         // « HOK solo pour ensemble » : Alban Richard
+//         // « Record of ancient things » : Petter Jacobsson and Thomas Caley
+//         // « Corps De Ballet » : Noé Soulier
+//         // « Hedda » : Ingun Bjornsgaard
+//         // « Showroomdummises #3 » : Gisele Vienne
+//         // « Mariage » : Tero Saarinen
+//         //  « Le Sacre du printemps » : Ginette Laurin
+//         // « Rave » : Karole Armitage
+//         //  « Petrouchka » : Michel Fokine
+//         //  « Les noces » : Bronislava Nijinska 
+//         //  « Tragic love » : Steven Petronio
+//         //  « Hymnen » : Didier Deschamps and Lia Rodriguez
+//         //  « Organic beat » : Paolo Ribeiro
+//         //  « L’après-midi d’un faune » : Michel Fokine"
      
     
-  },
-  {
-    date: '2008',
-    role: 'Dancer',
-    company: "Ballet d'Europe",
-    piece:"Mireille",
-  },
-  {
-    date: '2007',
-    role: 'Apprentice dancer',
-    company: 'Ballet National de Marseille',
-    piece: "Concerto Barocco",
-  },
-];
+//   },
+//   {
+//     date: '2008',
+//     role: 'Dancer',
+//     company: "Ballet d'Europe",
+//     piece:"Mireille",
+//   },
+//   {
+//     date: '2007',
+//     role: 'Apprentice dancer',
+//     company: 'Ballet National de Marseille',
+//     piece: "Concerto Barocco",
+//   },
+// ];
 
 /**
  * Social items
