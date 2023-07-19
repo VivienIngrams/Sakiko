@@ -12,7 +12,7 @@ const Book: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="bg-[#002147]" sectionId={SectionId.Book}>
+      <Section className="bg-[#190c41]" sectionId={SectionId.Book}>
         <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
           <div
             className={classNames('col-span-1 flex flex-col items-center gap-y-6', {

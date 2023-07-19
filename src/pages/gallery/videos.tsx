@@ -1,29 +1,31 @@
 import classNames from 'classnames';
-import Image from 'next/image';
 import {FC, memo} from 'react';
 
 import Section from '../../components/Layout/Section';
 import Footer from '../../components/Sections/Footer';
 import Header from '../../components/Sections/Header';
-import {galleryItemsModel, SectionId} from '../../data/data';
+import {galleryItemsVideos, SectionId} from '../../data/data';
 
 const Videos: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="bg-black" sectionId={SectionId.Gallery}>
+      <Section className="bg-[#190c41]" sectionId={SectionId.Gallery}>
         <div className="mb-20 flex flex-col gap-y-8">
           <h2 className="self-center text-xl font-thin uppercase text-white">Videos</h2>
-          <div className=" w-full columns-2 md:columns-3 lg:columns-4">
-            {galleryItemsModel.map((item, index) => {
-              const {image} = item;
+          <div className="-w-full lg:columns-2">
+            {galleryItemsVideos.map((item, index) => {
+              const {src} = item;
               return (
-                <div className="pb-6" key={`${index}`}>
-                  <div
-                    className={classNames(
-                      'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                    )}>
-                    <Image alt="Sakiko" layout="responsive" placeholder="blur" src={image} />
+                <div className="max-w-full pb-6 relative" key={`${index}`}>
+                  {' '}
+                  <div className={classNames(' mx-auto h-max w-full')}>
+                    <iframe
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      height="315"
+                      src={`https://www.youtube.com/embed/${src}`}
+                      title="video"
+                      width="560"></iframe>
                     {/* <ItemOverlay item={item} /> */}
                   </div>
                 </div>

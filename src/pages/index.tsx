@@ -27,7 +27,7 @@ const Home: FC = memo(() => {
             priority
             src={imageSrc}
           />
-          <div className="absolute top-0 left-0 h-full w-full bg-[#002147] bg-opacity-80"></div>
+          <div className="absolute top-0 left-0 h-full w-full bg-[#190c41] bg-opacity-80"></div>
           <div className="z-10  max-w-screen-lg px-4 lg:px-0 ">
             <div className="flex flex-col  items-center gap-y-6 rounded-xl  text-center ">
               <h1 className="mt-5 font-urban text-4xl font-thin text-white sm:text-5xl lg:text-7xl">{name}</h1>

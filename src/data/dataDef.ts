@@ -71,6 +71,11 @@ export interface GalleryItem {
   image: string | StaticImageData;
 }
 
+export interface GalleryVideo {
+  src: string;
+  title: string;
+}
+
 /**
  * CV section
  */

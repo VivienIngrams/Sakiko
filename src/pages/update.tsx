@@ -98,7 +98,7 @@ const Update: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="m-20 bg-black" sectionId={SectionId.Update}>
+      <Section className="m-20 bg-[#190c41]" sectionId={SectionId.Update}>
         <div className="flex flex-col justify-around sm:flex-row">
           <form onSubmit={submitPhotoHandler}>
             <h2 className="text-center text-2xl font-thin uppercase text-white">Gallery pages</h2>

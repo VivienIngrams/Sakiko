@@ -50,7 +50,7 @@ import porfolioImage26 from '../images/portfolio/portfolio-20.jpg';
 import porfolioImage24 from '../images/portfolio/portfolio-21.jpg';
 import porfolioImage25 from '../images/portfolio/portfolio-22.jpg';
 import porfolioImage23 from '../images/portfolio/sakiko.jpg';
-import {About, GalleryItem, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
+import {About, GalleryItem, GalleryVideo, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
 
 /**
  * Page meta data
@@ -82,7 +82,7 @@ export const heroData: Hero = {
   name: `SAKIKO OISHI`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer Choreographer Model Actress</p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer  -  Choreographer  -  Model  -  Actress</p>
     </>
   ),
   actions: [
@@ -263,6 +263,23 @@ export const galleryItemsStage: GalleryItem[] = [
   {
     image: stageImage17,
   },
+];
+
+export const galleryItemsVideos: GalleryVideo[] = [
+  {
+    src: '2wZzwb1Denc',
+    title: 'Voyou clip'
+  },
+  // {
+  //   image: porfolioImage17,
+  // },
+
+  // {
+  //   image: porfolioImage19,
+  // },
+  // {
+  //   image: porfolioImage22,
+  // },
 ];
 
 /**
