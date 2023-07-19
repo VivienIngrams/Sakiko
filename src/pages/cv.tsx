@@ -5,7 +5,7 @@ import {FC, memo, PropsWithChildren} from 'react';
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
-import {education,  heroData, SectionId} from '../data/data';
+import {education, experience, heroData, SectionId} from '../data/data';
 
 const {actions} = heroData;
 
@@ -26,7 +26,6 @@ interface CVProps {
 
 
 const CV: FC<CVProps> = memo((props) => {
-  console.log(`props : ${props.cvData}`);
 
   return (
     <>
@@ -48,7 +47,7 @@ const CV: FC<CVProps> = memo((props) => {
         </div>{' '}
         <div className="flex flex-col divide-y-2 divide-neutral-300 text-white">
           <ResumeSection title="Work Experience">
-            {props.cvData.map((item, index) => (
+            {experience.map((item, index) => (
               <TimelineItem item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
@@ -114,7 +113,7 @@ export async function getStaticProps() {
     const cvCollection = db.collection('cv');
 
     const cvData = await cvCollection.find().toArray();
-    console.log(cvData);
+
     client.close();
 
     return {
