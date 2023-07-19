@@ -37,7 +37,7 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import porfolioImage12 from '../images/portfolio/portfolio-12.jpg';
 import porfolioImage13 from '../images/portfolio/portfolio-13.jpg';
 import porfolioImage14 from '../images/portfolio/portfolio-14.jpg';
@@ -82,7 +82,7 @@ export const heroData: Hero = {
   name: `SAKIKO OISHI`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer  -  Choreographer  -  Model  -  Actress</p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">Dancer - Choreographer - Model - Actress</p>
     </>
   ),
   actions: [
@@ -170,9 +170,9 @@ export const galleryItemsModel: GalleryItem[] = [
   {
     image: porfolioImage27,
   },
-  {
-    image: porfolioImage11,
-  },
+  // {
+  //   image: porfolioImage11,
+  // },
   {
     image: porfolioImage12,
   },
@@ -209,17 +209,16 @@ export const galleryItemsHands: GalleryItem[] = [
   {
     image: porfolioImage22,
   },
-
 ];
 export const galleryItemsStage: GalleryItem[] = [
-  {
-    image: stageImage1,
-  },
   {
     image: stageImage2,
   },
   {
     image: stageImage3,
+  },
+  {
+    image: stageImage1,
   },
   {
     image: stageImage4,
@@ -232,7 +231,13 @@ export const galleryItemsStage: GalleryItem[] = [
     image: stageImage6,
   },
   {
+    image: stageImage17,
+  },
+  {
     image: stageImage7,
+  },
+  {
+    image: stageImage15,
   },
   {
     image: stageImage8,
@@ -242,6 +247,9 @@ export const galleryItemsStage: GalleryItem[] = [
   },
   {
     image: stageImage10,
+  },
+  {
+    image: stageImage16,
   },
   {
     image: stageImage11,
@@ -255,43 +263,22 @@ export const galleryItemsStage: GalleryItem[] = [
   {
     image: stageImage14,
   },
-  {
-    image: stageImage15,
-  },
-  {
-    image: stageImage16,
-  },
-  {
-    image: stageImage17,
-  },
 ];
 
 export const galleryItemsVideos: GalleryVideo[] = [
   {
     src: 'https://www.youtube.com/embed/2wZzwb1Denc',
-    title: 'Voyou'
+    title: 'Voyou',
   },
   {
     src: 'https://www.youtube.com/embed/JGsJU5NyJho',
-    title: 'Chapelier Fou, Il Trastevere'
+    title: 'Chapelier Fou, Il Trastevere',
   },
   {
     src: 'https://www.instagram.com/p/CWSXNKVo7KO/embed',
-    title: 'Hermès, Les Mains'
+    title: 'Hermès, Les Mains',
   },
-  {
-    src: '',
-    title: ''
-  },
-  {
-    src: '',
-    title: ''
-  },
-  {
-    src: '',
-    title: ''
-  },
- 
+
 ];
 
 /**
@@ -307,37 +294,37 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
- {
-  date: '2023',
-  role: 'Video clip',
-  company: 'Voyou',
-  piece: "L'Hiver",
-},
-{
-  date: '2023',
-  role: 'Actress',
-  company: 'Emily in Paris',
-  piece: "Darren Star",
-},
-{
-  date: '2022',
-  role: 'Video clip',
-  company: 'Arnaud Robotini',
-  piece: 'Fix Me',
-},
-{
-  date: '2021',
-  role: 'Actress',
-  company: 'Murder Mystery 2',
-  piece: 'Jeremy Garelick',
-},
-{
-  date: '2022',
-  role: 'Video clip',
-  company: 'Gabriel Tur',
-  piece: 'Le star',
-},
-{
+  {
+    date: '2023',
+    role: 'Video clip',
+    company: 'Voyou',
+    piece: "L'Hiver",
+  },
+  {
+    date: '2023',
+    role: 'Actress',
+    company: 'Emily in Paris',
+    piece: 'Darren Star',
+  },
+  {
+    date: '2022',
+    role: 'Video clip',
+    company: 'Arnaud Robotini',
+    piece: 'Fix Me',
+  },
+  {
+    date: '2021',
+    role: 'Actress',
+    company: 'Murder Mystery 2',
+    piece: 'Jeremy Garelick',
+  },
+  {
+    date: '2022',
+    role: 'Video clip',
+    company: 'Gabriel Tur',
+    piece: 'Le star',
+  },
+  {
     date: '2022 - Present',
     role: 'Dancer',
     company: 'CCN de Caen',
@@ -354,26 +341,18 @@ export const experience: TimelineItem[] = [
     role: 'Video clip',
     company: 'Chapelier Fou',
     piece: 'Il Trastevere',
-  }, 
+  },
   {
     date: '2020 - Present',
     role: 'Dancer',
     company: 'Compagnie La Bazooka',
-    piece:
-    
-        "Pillowgraphies, Monstres indiens"
-      
-   
+    piece: 'Pillowgraphies, Monstres indiens',
   },
   {
     date: '2020',
     role: 'Dancer',
     company: 'Gisèle Vienne and Etienne Bideau-Ray',
-    piece: 
-    
-       "Showroom Dummies #4"
-    
-   
+    piece: 'Showroom Dummies #4',
   },
   {
     date: '2019',
@@ -386,21 +365,20 @@ export const experience: TimelineItem[] = [
     date: 'March 2008 - February 2019',
     role: 'Dancer',
     company: 'CCN Ballet de Lorraine',
-    piece:  " Trisha Brown, Andonis Foniadakis, Rachid Ouramdane,Cindy Van Aker, Mathilde Monnier, Emanuel Gat, William Forsythe, Merce Cunningham, Twyla Tharp, Martha Graham, Cecilia Bengolea and François Chaignaud, Miguel Gutierrez, Alban Richard,  Petter Jacobsson and Thomas Caley, Noé Soulier, Ingun Bjornsgaard, Gisele Vienne, Tero Saarinen, Ginette Laurin, Karole Armitage, Michel Fokine, Bronislava Nijinska, Steven Petronio, Didier Deschamps and Lia Rodriguez, Paolo Ribeiro, Michel Fokine"
-     
-    
+    piece:
+      ' Trisha Brown, Andonis Foniadakis, Rachid Ouramdane,Cindy Van Aker, Mathilde Monnier, Emanuel Gat, William Forsythe, Merce Cunningham, Twyla Tharp, Martha Graham, Cecilia Bengolea and François Chaignaud, Miguel Gutierrez, Alban Richard,  Petter Jacobsson and Thomas Caley, Noé Soulier, Ingun Bjornsgaard, Gisele Vienne, Tero Saarinen, Ginette Laurin, Karole Armitage, Michel Fokine, Bronislava Nijinska, Steven Petronio, Didier Deschamps and Lia Rodriguez, Paolo Ribeiro, Michel Fokine',
   },
   {
     date: '2008',
     role: 'Dancer',
     company: "Ballet d'Europe",
-    piece:"Mireille",
+    piece: 'Mireille',
   },
   {
     date: '2007',
     role: 'Apprentice dancer',
     company: 'Ballet National de Marseille',
-    piece: "Concerto Barocco",
+    piece: 'Concerto Barocco',
   },
 ];
 

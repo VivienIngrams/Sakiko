@@ -24,9 +24,8 @@ interface CVProps {
   }[];
 }
 
-
-const CV: FC<CVProps> = memo(() => {
-
+const CV: FC<CVProps> = memo(props => {
+  console.log(props.cvData);
   return (
     <>
       <Header />
