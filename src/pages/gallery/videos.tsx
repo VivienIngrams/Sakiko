@@ -22,7 +22,8 @@ const Videos: FC = memo(() => {
                     <iframe
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       height="315"
-                      src={`https://www.youtube.com/embed/${src}`}
+                      src={src}
+                      // src={`https://www.youtube.com/embed/${src}`}
                       title="video"
                       width="560"></iframe>
                     {/* <ItemOverlay item={item} /> */}

@@ -267,16 +267,16 @@ export const galleryItemsStage: GalleryItem[] = [
 
 export const galleryItemsVideos: GalleryVideo[] = [
   {
-    src: '2wZzwb1Denc',
-    title: 'Voyou clip'
+    src: 'https://www.youtube.com/embed/2wZzwb1Denc',
+    title: 'Voyou'
   },
   {
-    src: '',
-    title: ''
+    src: 'https://www.youtube.com/embed/JGsJU5NyJho',
+    title: 'Chapelier Fou, Il Trastevere'
   },
   {
-    src: '',
-    title: ''
+    src: 'https://www.instagram.com/p/CWSXNKVo7KO/embed',
+    title: 'Hermès, Les Mains'
   },
   {
     src: '',
