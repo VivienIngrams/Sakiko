@@ -35,7 +35,7 @@ const Model: FC = memo(() => {
       <Section className="bg-black" sectionId={SectionId.Gallery}>
         <div className="mb-20 flex flex-col gap-y-8">
           <h2 className="self-center text-xl font-thin uppercase text-white">{router.query.category}</h2>
-          <div className=" w-full columns-2 md:columns-3 lg:columns-4">
+          <div className=" w-full columns-1 md:columns-3 lg:columns-4">
             {section.map((item, index) => {
               const {image} = item;
               return (

@@ -34,7 +34,7 @@ export const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId
     const activeClass = classNames(baseClass, 'text-orange-800');
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
     return (
-      <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
+      <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/30 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8 font-urban uppercase italic">
           <Link href="/" passHref>
             <a className={classNames(inactiveClass)} key="Home">
@@ -72,7 +72,7 @@ export const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId 
       <>
         <button
           aria-label="Menu Button"
-          className="fixed top-2 right-2 z-40 rounded-md bg-red-900 p-2 ring-offset-gray-800/60 hover:bg-orange-400 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 sm:hidden"
+          className="fixed top-2 right-2 z-40 rounded-md bg-[#190c41] p-2 ring-offset-gray-800/60 hover:bg-orange-400 focus:outline-none focus:ring-0 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 sm:hidden"
           onClick={toggleOpen}>
           <MenuAlt3Icon className="h-8 w-8 text-white" />
           <span className="sr-only">Open sidebar</span>
