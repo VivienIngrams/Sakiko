@@ -270,16 +270,27 @@ export const galleryItemsVideos: GalleryVideo[] = [
     src: '2wZzwb1Denc',
     title: 'Voyou clip'
   },
-  // {
-  //   image: porfolioImage17,
-  // },
-
-  // {
-  //   image: porfolioImage19,
-  // },
-  // {
-  //   image: porfolioImage22,
-  // },
+  {
+    src: '',
+    title: ''
+  },
+  {
+    src: '',
+    title: ''
+  },
+  {
+    src: '',
+    title: ''
+  },
+  {
+    src: '',
+    title: ''
+  },
+  {
+    src: '',
+    title: ''
+  },
+ 
 ];
 
 /**

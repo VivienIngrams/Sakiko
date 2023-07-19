@@ -11,15 +11,14 @@ const Videos: FC = memo(() => {
     <>
       <Header />
       <Section className="bg-[#190c41]" sectionId={SectionId.Gallery}>
-        <div className="mb-20 flex flex-col gap-y-8">
+        <div className="mb-20 flex flex-col items-center gap-y-8">
           <h2 className="self-center text-xl font-thin uppercase text-white">Videos</h2>
-          <div className="-w-full lg:columns-2">
+          <div className="grid max-w-full grid-cols-1 gap-y-8 ">
             {galleryItemsVideos.map((item, index) => {
               const {src} = item;
               return (
-                <div className="max-w-full pb-6 relative" key={`${index}`}>
-                  {' '}
-                  <div className={classNames(' mx-auto h-max w-full')}>
+                <div className="w-full" key={`${index}`}>
+                  <div className={classNames('relative h-max w-full')}>
                     <iframe
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       height="315"
