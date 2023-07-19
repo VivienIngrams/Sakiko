@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+// import {MongoClient} from 'mongodb';
 import Image from 'next/image';
 import {useRouter} from 'next/router';
 import {FC, memo} from 'react';
@@ -9,7 +10,21 @@ import Header from '../../components/Sections/Header';
 import {galleryItemsDance, galleryItemsHands, galleryItemsModel, galleryItemsStage, SectionId} from '../../data/data';
 import {GalleryItem} from '../../data/dataDef';
 
-const Model: FC = memo(() => {
+// const password: string = process.env.MONGODB_PASSWORD || '';
+// const encodedPassword: string = encodeURIComponent(password);
+
+// interface PhotoProps {
+//   photoData: {
+//     image: string;
+//     category: string;
+//     id: string;
+//   }[];
+// }
+
+// const Gallery: FC<PhotoProps> = memo((props) => {
+//   console.log(props.photoData);
+const Gallery: FC = memo(() => {
+
   const router = useRouter();
 
   let section: GalleryItem[] = [];
@@ -58,8 +73,8 @@ const Model: FC = memo(() => {
   );
 });
 
-Model.displayName = 'Model';
-export default Model;
+Gallery.displayName = 'Gallery';
+export default Gallery;
 
 
 // export async function getStaticPaths() {
@@ -91,13 +106,35 @@ export default Model;
 // }
 
 // export async function getStaticProps() {
-// // fetch data from mongodb
-//   return {
-//     props: {
-//       photoData: {
-//         image: 'https://agendaculturalporto.org/wp-content/uploads/2023/04/Van-Gogh-Alfandega-do-Porto.jpg',
-//         category: 'dance',
-//       }
-//     }
+//   try {
+//     const client = await MongoClient.connect(
+//       `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/photo?retryWrites=true&w=majority`,
+//     );
+//     const db = client.db();
+//     const photoCollection = db.collection('photo');
+
+//     const photoData = await photoCollection.find().toArray();
+
+//     client.close();
+
+//     return {
+//       props: {
+//         photoData: photoData.map(photo => ({
+//           image: photo.data.image,
+//           category: photo.data.category,
+
+//           id: photo._id.toString(),
+//         })),
+//       },
+//       revalidate: 10000,
+//     };
+//   } catch (error) {
+//     console.error('Error fetching data from MongoDB:', error);
+
+//     return {
+//       props: {
+//         photoData: [],
+//       },
+//     };
 //   }
 // }

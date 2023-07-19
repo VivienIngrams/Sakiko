@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import {MongoClient} from 'mongodb';
+// import {MongoClient} from 'mongodb';
 import {FC, memo, PropsWithChildren} from 'react';
 
 import Section from '../components/Layout/Section';
@@ -9,23 +9,22 @@ import {education, experience, heroData, SectionId} from '../data/data';
 
 const {actions} = heroData;
 
-const password: string = process.env.MONGODB_PASSWORD || '';
-const encodedPassword: string = encodeURIComponent(password);
+// const password: string = process.env.MONGODB_PASSWORD || '';
+// const encodedPassword: string = encodeURIComponent(password);
 
-// ResumeSection = Modelling, Dance, Films, Video clips
+// interface CVProps {
+//   cvData: {
+//     company: string;
+//     role: string;
+//     date: string;
+//     piece: string;
+//     id: string;
+//   }[];
+// }
 
-interface CVProps {
-  cvData: {
-    company: string;
-    role: string;
-    date: string;
-    piece: string;
-    id: string;
-  }[];
-}
-
-const CV: FC<CVProps> = memo(props => {
-  console.log(props.cvData);
+// const CV: FC<CVProps> = memo(props => {
+  // console.log(props.cvData);
+  const CV: FC = memo(() => {
   return (
     <>
       <Header />
@@ -103,37 +102,37 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
 
 TimelineItem.displayName = 'TimelineItem';
 
-export async function getStaticProps() {
-  try {
-    const client = await MongoClient.connect(
-      `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/cv?retryWrites=true&w=majority`,
-    );
-    const db = client.db();
-    const cvCollection = db.collection('cv');
+// export async function getStaticProps() {
+//   try {
+//     const client = await MongoClient.connect(
+//       `mongodb+srv://vivien:${encodedPassword}@cluster0.9j3scal.mongodb.net/cv?retryWrites=true&w=majority`,
+//     );
+//     const db = client.db();
+//     const cvCollection = db.collection('cv');
 
-    const cvData = await cvCollection.find().toArray();
+//     const cvData = await cvCollection.find().toArray();
 
-    client.close();
+//     client.close();
 
-    return {
-      props: {
-        cvData: cvData.map(cvEntry => ({
-          company: cvEntry.data.company,
-          role: cvEntry.data.role,
-          date: cvEntry.data.date,
-          piece: cvEntry.data.piece,
-          id: cvEntry._id.toString(),
-        })),
-      },
-      revalidate: 10000,
-    };
-  } catch (error) {
-    console.error('Error fetching data from MongoDB:', error);
+//     return {
+//       props: {
+//         cvData: cvData.map(cvEntry => ({
+//           company: cvEntry.data.company,
+//           role: cvEntry.data.role,
+//           date: cvEntry.data.date,
+//           piece: cvEntry.data.piece,
+//           id: cvEntry._id.toString(),
+//         })),
+//       },
+//       revalidate: 10000,
+//     };
+//   } catch (error) {
+//     console.error('Error fetching data from MongoDB:', error);
 
-    return {
-      props: {
-        cvData: [],
-      },
-    };
-  }
-}
+//     return {
+//       props: {
+//         cvData: [],
+//       },
+//     };
+//   }
+// }
