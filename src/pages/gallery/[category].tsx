@@ -32,7 +32,7 @@ const Model: FC = memo(() => {
   return (
     <>
       <Header />
-      <Section className="bg-black" sectionId={SectionId.Gallery}>
+      <Section className="bg-[#190c41]" sectionId={SectionId.Gallery}>
         <div className="mb-20 flex flex-col gap-y-8">
           <h2 className="self-center text-xl font-thin uppercase text-white">{router.query.category}</h2>
           <div className=" w-full columns-1 md:columns-3 lg:columns-4">
