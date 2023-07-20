@@ -30,7 +30,7 @@ const Videos: FC<videoProps> = memo((props) => {
             {props.videoData.map((item, index) => {
               const {src} = item;
               return (
-                <div className="w-full" key={`${index}`}>
+                <div className="w-full" key={index}>
                   <div className={classNames('relative h-max w-full')}>
                     <iframe
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -54,7 +54,7 @@ const Gallery: FC = memo(() => {
             {section.map((item, index) => {
               const {image} = item;
               return (
-                <div className="pb-6" key={`${index}`}>
+                <div className="pb-6" key={index}>
                   <div
                     className={classNames(
                       'relative h-max w-full overflow-hidden shadow-lg shadow-black/30 lg:shadow-xl',
