@@ -1,8 +1,8 @@
 import {FC, FormEvent, memo, useRef} from 'react';
 
 interface AuthFormProps {
-    onLogin: (loginData: { email: string; password: string }) => void;
-  }
+  onLogin: (loginData: {email: string; password: string}) => void;
+}
 
 const AuthForm: FC<AuthFormProps> = memo(({onLogin}: AuthFormProps) => {
   const emailInputRef = useRef<HTMLInputElement>(null);
@@ -18,7 +18,6 @@ const AuthForm: FC<AuthFormProps> = memo(({onLogin}: AuthFormProps) => {
 
     emailInputRef.current.value = '';
     passwordInputRef.current.value = '';
-   
   }
 
   return (

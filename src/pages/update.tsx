@@ -24,6 +24,11 @@ interface cvData {
   piece: string;
 }
 
+// const email: string = process.env.KIKO_EMAIL || '';
+// const encodedEmail: string = encodeURIComponent(email);
+// const password: string = process.env.KIKO_PASSWORD || '';
+// const encodedPassword: string = encodeURIComponent(password);
+
 async function onAddPhoto(data: galleryData): Promise<galleryData> {
   const response = await fetch('/api/update', {
     method: 'POST',
@@ -70,9 +75,12 @@ const Update: FC = memo(() => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function loginHandler(loginData) {
-    if (loginData.email === 'sakiko@com' && loginData.password === 'password') {
+
+    if (loginData.email === 'sakiko_oishi@yahoo.com' && loginData.password === 'password') {
       setIsLoggedIn(true);
     }
+    console.log(isLoggedIn);
+    return;
   }
 
   const imageInputRef = useRef<HTMLInputElement>(null);
