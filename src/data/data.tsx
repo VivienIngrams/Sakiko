@@ -68,7 +68,7 @@ export const SectionId = {
   About: 'about',
   Book: 'book',
   Gallery: 'gallery',
-  CV: 'CV',
+  CV: 'cv',
   Update: 'update',
 } as const;
 

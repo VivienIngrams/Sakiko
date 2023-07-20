@@ -5,7 +5,7 @@ import {FC, memo, PropsWithChildren} from 'react';
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
-import {education,  heroData, SectionId} from '../data/data';
+import {education, experience,  heroData, SectionId} from '../data/data';
 
 const {actions} = heroData;
 
@@ -22,9 +22,9 @@ interface CVProps {
   }[];
 }
 
-const CV: FC<CVProps> = memo(props => {
-  // console.log(props.cvData);
-  // const CV: FC = memo(() => {
+const Cv: FC<CVProps> = memo(props => {
+  console.log(props.cvData);
+  // const Cv: FC = memo(() => {
   return (
     <>
       <Header />
@@ -45,7 +45,7 @@ const CV: FC<CVProps> = memo(props => {
         </div>{' '}
         <div className="flex flex-col divide-y-2 divide-neutral-300 text-white">
           <ResumeSection title="Work Experience">
-            {props.cvData.map((item, index) => (
+            {experience.map((item, index) => (
               <TimelineItem item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
@@ -61,8 +61,8 @@ const CV: FC<CVProps> = memo(props => {
   );
 });
 
-CV.displayName = 'Resume';
-export default CV;
+Cv.displayName = 'Resume';
+export default Cv;
 
 const ResumeSection: FC<PropsWithChildren<{title: string}>> = memo(({title, children}) => {
   return (
