@@ -1,25 +1,28 @@
-import {FC, FormEvent, memo, useRef, useState} from 'react';
+import {FC, FormEvent, memo, useRef} from 'react';
 
-const AuthForm: FC = memo(() => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+interface AuthFormProps {
+    onLogin: (loginData: { email: string; password: string }) => void;
+  }
 
+const AuthForm: FC<AuthFormProps> = memo(({onLogin}: AuthFormProps) => {
   const emailInputRef = useRef<HTMLInputElement>(null);
   const passwordInputRef = useRef<HTMLInputElement>(null);
 
   function loginHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const loginData = {
+      email: emailInputRef.current.value,
+      password: passwordInputRef.current.value,
+    };
+    onLogin(loginData);
 
-    if (emailInputRef.current.value === 'sakiko@com' && passwordInputRef.current.value === 'password') {
-      setIsLoggedIn(true);
-
-      emailInputRef.current.value = '';
-      passwordInputRef.current.value = '';
-    }
+    emailInputRef.current.value = '';
+    passwordInputRef.current.value = '';
+   
   }
 
   return (
     <div className="flex flex-col justify-around sm:flex-row">
-        {!isLoggedIn && 
       <form onSubmit={loginHandler}>
         <h2 className="text-center text-2xl font-thin uppercase text-white">Log in</h2>
         <div className="flex flex-col items-end ">
@@ -41,7 +44,7 @@ const AuthForm: FC = memo(() => {
             </button>
           </div>
         </div>
-      </form>}
+      </form>
     </div>
   );
 });
