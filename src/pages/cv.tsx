@@ -5,7 +5,7 @@ import {FC, memo, PropsWithChildren} from 'react';
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
-import {education, experience,  heroData, SectionId} from '../data/data';
+import {education,  heroData, SectionId} from '../data/data';
 
 const {actions} = heroData;
 
@@ -45,7 +45,7 @@ const Cv: FC<CVProps> = memo(props => {
         </div>{' '}
         <div className="flex flex-col divide-y-2 divide-neutral-300 text-white">
           <ResumeSection title="Work Experience">
-            {experience.map((item, index) => (
+            {props.cvData.map((item, index) => (
               <TimelineItem item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
