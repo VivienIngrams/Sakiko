@@ -55,16 +55,6 @@ export interface AboutItem {
 }
 
 /**
- * Stat section
- */
-// export interface Stat {
-//   title: string;
-//   value: number;
-//   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-// }
-
-
-/**
  * Gallery section
  */
 export interface GalleryItem {
@@ -85,36 +75,6 @@ export interface TimelineItem {
   company: string;
   piece: string;
 }
-
-/**
- * Contact section
- */
-// export interface ContactSection {
-//   headerText?: string;
-//   description: string;
-//   items: ContactItem[];
-// }
-
-// export const ContactType = {
-//   Email: 'Email',
-//   Phone: 'Phone',
-//   Location: 'Location',
-
-//   Instagram: 'Instagram',
-// } as const;
-
-// export type ContactType = typeof ContactType[keyof typeof ContactType];
-
-// export interface ContactItem {
-//   type: ContactType;
-//   text: string;
-//   href?: string;
-// }
-
-// export interface ContactValue {
-//   Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => JSX.Element);
-//   srLabel: string;
-// }
 
 /**
  * Social items

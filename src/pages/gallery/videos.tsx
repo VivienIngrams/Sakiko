@@ -25,6 +25,7 @@ const Videos: FC<videoProps> = memo((props) => {
       <Section className="bg-[#190c41]" sectionId={SectionId.Gallery}>
         <div className="mb-20 flex flex-col items-center gap-y-8">
           <h2 className="self-center text-xl font-thin uppercase text-white">Videos</h2>
+          <div></div>
           <div className="grid max-w-full grid-cols-1 gap-y-8 ">
             {props.videoData.map((item, index) => {
               const {src} = item;

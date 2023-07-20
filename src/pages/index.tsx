@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import Link from 'next/link';
 import {FC, memo, useMemo} from 'react';
@@ -29,16 +28,19 @@ const Home: FC = memo(() => {
           />
           <div className="absolute top-0 left-0 h-full w-full bg-[#190c41] bg-opacity-80"></div>
           <div className="z-10  max-w-screen-lg px-4 lg:px-0 ">
-            <div className="flex flex-col  items-center gap-y-6 rounded-xl  text-center ">
+            <div className="flex flex-col  items-center gap-y-4 rounded-xl  text-center ">
               <h1 className="mt-5 font-urban text-4xl font-thin text-white sm:text-5xl lg:text-7xl">{name}</h1>
               {heroData.description}
-              
-              <div className=" p-2 mt-5 capitalize max-w-screen-lg px-4 font-khand text-2xl font-light text-white space-y-0  sm:text-3xl lg:px-0 lg:text-5xl">
+
+              <div className=" mt-5 max-w-screen-lg space-y-0 p-2 px-4 font-khand text-2xl font-light capitalize text-white  sm:text-3xl lg:px-0 lg:text-5xl">
                 {navSections.map((section: string) => (
                   <div className="p-4" key={section}>
-                    <Link href={`/${section}`} >{section}</Link>
+                    <Link href={`/${section}`}>{section}</Link>
                   </div>
                 ))}
+              </div>
+              <div>
+                {' '}
               </div>
             </div>
           </div>

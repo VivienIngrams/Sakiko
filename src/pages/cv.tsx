@@ -1,11 +1,12 @@
 import classNames from 'classnames';
 import {MongoClient} from 'mongodb';
+import Link from 'next/link';
 import {FC, memo, PropsWithChildren} from 'react';
 
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
-import {education,  heroData, SectionId} from '../data/data';
+import {education, heroData, SectionId} from '../data/data';
 
 const {actions} = heroData;
 
@@ -23,7 +24,6 @@ interface CVProps {
 }
 
 const Cv: FC<CVProps> = memo(props => {
-
   return (
     <>
       <Header />
@@ -53,6 +53,13 @@ const Cv: FC<CVProps> = memo(props => {
               <TimelineItem item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
+          <div className=" pb-8">
+            <div className="flex justify-center">
+              <Link href="/update" passHref>
+                <a>LOGIN</a>
+              </Link>
+            </div>
+          </div>
         </div>
       </Section>
       <Footer />
