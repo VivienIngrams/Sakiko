@@ -70,6 +70,7 @@ export const SectionId = {
   Gallery: 'gallery',
   CV: 'cv',
   Update: 'update',
+  Login: 'login',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];

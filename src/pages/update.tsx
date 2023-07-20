@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import {FC, FormEvent, memo, useRef} from 'react';
 
+import AuthForm from '../components/AuthForm';
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
@@ -92,6 +93,7 @@ const Update: FC = memo(() => {
       categoryInputRef.current.value = '';
     }
   }
+  
   function submitVideoHandler(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -136,6 +138,9 @@ const Update: FC = memo(() => {
   return (
     <>
       <Header />
+      <Section className="m-20 bg-[#190c41]" sectionId={SectionId.Login}>
+        <AuthForm />
+      </Section>
       <Section className="m-20 bg-[#190c41]" sectionId={SectionId.Update}>
         <div className="flex flex-col justify-around sm:flex-row">
           <form onSubmit={submitPhotoHandler}>
@@ -153,8 +158,10 @@ const Update: FC = memo(() => {
                 </label>
                 <input id="category" ref={categoryInputRef} required type="text" />
               </div>
-              <div className="m-10 bg-neutral-400 p-2 rounded-2xl">
-                <button className="rounded-2xl" type="submit">Add Photo</button>
+              <div className="m-10 rounded-2xl bg-neutral-400 p-2">
+                <button className="rounded-2xl" type="submit">
+                  Add Photo
+                </button>
               </div>
             </div>
           </form>
@@ -173,8 +180,10 @@ const Update: FC = memo(() => {
                 </label>
                 <input id="title" ref={titleInputRef} required type="text" />
               </div>
-              <div className="m-10 bg-neutral-400 p-2 rounded-2xl">
-                <button className="rounded-2xl" type="submit">Add Video</button>
+              <div className="m-10 rounded-2xl bg-neutral-400 p-2">
+                <button className="rounded-2xl" type="submit">
+                  Add Video
+                </button>
               </div>
             </div>
           </form>
@@ -205,8 +214,10 @@ const Update: FC = memo(() => {
                 </label>
                 <input id="piece" ref={pieceInputRef} required type="text" />
               </div>
-              <div className="m-10 bg-neutral-400 p-2 rounded-2xl ">
-                <button className="rounded-2xl" type="submit">Add Experience</button>
+              <div className="m-10 rounded-2xl bg-neutral-400 p-2 ">
+                <button className="rounded-2xl" type="submit">
+                  Add Experience
+                </button>
               </div>
             </div>
           </form>
