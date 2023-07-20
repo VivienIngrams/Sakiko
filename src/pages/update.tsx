@@ -11,6 +11,11 @@ interface galleryData {
   category: string;
 }
 
+interface videoData {
+  src: string;
+  title: string;
+}
+
 interface cvData {
   company: string;
   role: string;
@@ -32,6 +37,20 @@ async function onAddPhoto(data: galleryData): Promise<galleryData> {
   return photoData;
 }
 
+async function onAddVideo(data: videoData): Promise<videoData> {
+  const response = await fetch('/api/update', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  const videoData = await response.json();
+  console.log(videoData);
+  return videoData;
+}
+
 async function onAddExperience(data: cvData): Promise<cvData> {
   const response = await fetch('/api/update', {
     method: 'POST',
@@ -49,6 +68,8 @@ async function onAddExperience(data: cvData): Promise<cvData> {
 const Update: FC = memo(() => {
   const imageInputRef = useRef<HTMLInputElement>(null);
   const categoryInputRef = useRef<HTMLInputElement>(null);
+  const videoInputRef = useRef<HTMLInputElement>(null);
+  const titleInputRef = useRef<HTMLInputElement>(null);
   const companyInputRef = useRef<HTMLInputElement>(null);
   const roleInputRef = useRef<HTMLInputElement>(null);
   const dateInputRef = useRef<HTMLInputElement>(null);
@@ -69,6 +90,23 @@ const Update: FC = memo(() => {
       onAddPhoto(galleryData);
       imageInputRef.current.value = '';
       categoryInputRef.current.value = '';
+    }
+  }
+  function submitVideoHandler(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    if (videoInputRef.current && titleInputRef.current) {
+      const enteredVideo = videoInputRef.current.value;
+      const enteredTitle = titleInputRef.current.value;
+
+      const videoData: videoData = {
+        src: enteredVideo,
+        title: enteredTitle,
+      };
+
+      onAddVideo(videoData);
+      videoInputRef.current.value = '';
+      titleInputRef.current.value = '';
     }
   }
 
@@ -117,6 +155,26 @@ const Update: FC = memo(() => {
               </div>
               <div className="m-10 bg-neutral-400 p-2 rounded-2xl">
                 <button className="rounded-2xl" type="submit">Add Photo</button>
+              </div>
+            </div>
+          </form>
+          <form onSubmit={submitVideoHandler}>
+            <h2 className="text-center text-2xl font-thin uppercase text-white">Videos</h2>
+            <div className={classNames('flex flex-col items-end ')}>
+              <div className="p-5">
+                <label className=" p-2 font-normal text-white" htmlFor="src">
+                  Video link
+                </label>
+                <input id="src" ref={videoInputRef} required type="url" />
+              </div>
+              <div className="p-5">
+                <label className=" p-2 text-left font-normal text-white" htmlFor="title">
+                  Title
+                </label>
+                <input id="title" ref={titleInputRef} required type="text" />
+              </div>
+              <div className="m-10 bg-neutral-400 p-2 rounded-2xl">
+                <button className="rounded-2xl" type="submit">Add Video</button>
               </div>
             </div>
           </form>
