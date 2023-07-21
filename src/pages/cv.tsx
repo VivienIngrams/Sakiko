@@ -1,11 +1,12 @@
 import classNames from 'classnames';
 import {MongoClient} from 'mongodb';
 import Link from 'next/link';
-import {FC, memo, PropsWithChildren} from 'react';
+import {FC, memo} from 'react';
 
 import Section from '../components/Layout/Section';
 import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
+import ResumeSection, {TimelineItems} from '../components/Sections/ResumeSection';
 import {education, heroData, SectionId} from '../data/data';
 
 const {actions} = heroData;
@@ -45,12 +46,12 @@ const Cv: FC<CVProps> = memo(props => {
         <div className="flex flex-col divide-y-2 divide-neutral-300 text-white">
           <ResumeSection title="Work Experience">
             {props.cvData.map((item, index) => (
-              <TimelineItem item={item} key={`${item.company}-${index}`} />
+              <TimelineItems item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
           <ResumeSection title="Training">
             {education.map((item, index) => (
-              <TimelineItem item={item} key={`${item.company}-${index}`} />
+              <TimelineItems item={item} key={`${item.company}-${index}`} />
             ))}
           </ResumeSection>
           <div className=" pb-8">
@@ -69,44 +70,6 @@ const Cv: FC<CVProps> = memo(props => {
 
 Cv.displayName = 'Resume';
 export default Cv;
-
-const ResumeSection: FC<PropsWithChildren<{title: string}>> = memo(({title, children}) => {
-  return (
-    <div className="grid grid-cols-1 gap-y-4 py-8 first:pt-0 last:pb-0  md:grid-cols-4">
-      <div className="col-span-1 flex justify-center md:justify-start">
-        <div className="relative mb-5 h-max">
-          <h2 className="text-xl font-bold uppercase text-red-800 ">{title}</h2>
-          <span className="absolute inset-x-0 -bottom-1 border-b-2 border-red-800" />
-        </div>
-      </div>
-      <div className="col-span-1 flex flex-col md:col-span-3">{children}</div>
-    </div>
-  );
-});
-
-ResumeSection.displayName = 'ResumeSection';
-
-// eslint-disable-next-line import/first
-import {TimelineItem} from '../data/dataDef';
-
-const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
-  const {company, date, role, piece} = item;
-  return (
-    <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
-      <div className="flex flex-col pb-4">
-        <div className="flex items-center justify-center gap-x-2 md:justify-start">
-          <span className="flex-1 text-sm font-medium italic sm:flex-none">{role}</span>
-          <span>•</span>
-          <span className="flex-1 text-sm sm:flex-none">{date}</span>
-        </div>
-        <h2 className="text-xl font-bold text-neutral-400">{company}</h2>
-        <div> {piece}</div>
-      </div>
-    </div>
-  );
-});
-
-TimelineItem.displayName = 'TimelineItem';
 
 export async function getStaticProps() {
   try {
