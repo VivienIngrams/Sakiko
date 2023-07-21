@@ -65,11 +65,10 @@ export interface GalleryVideo {
   title: string;
 }
 
-export interface GalleryData {
+export interface GalleryPhoto {
   image: string;
   category: string;
 }
-
 
 /**
  * CV section
@@ -81,7 +80,7 @@ export interface TimelineItem {
   piece: string;
 }
 
-export interface cvData {
+export interface CvData {
   company: string;
   role: string;
   date: string;
@@ -103,8 +102,14 @@ export interface AuthFormProps {
   onLogin: (loginData: {email: string; password: string}) => void;
 }
 
-export interface UpdateFormProps {
-  onAddPhoto: (data: GalleryData) => void;
+export interface PhotoUpdateFormProps {
+  onAddPhoto: (data: GalleryPhoto) => void;
+}
+
+export interface VideoUpdateFormProps {
   onAddVideo: (data: GalleryVideo) => void;
-  onAddExperience: (data: cvData) => void;
+}
+
+export interface CvUpdateFormProps {
+  onAddExperience: (data: CvData) => void;
 }

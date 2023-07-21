@@ -1,21 +1,21 @@
-
 import {FC, memo, useState} from 'react';
 
 import Section from '../components/Layout/Section';
 import AuthForm from '../components/Sections/AuthForm';
 import Footer from '../components/Sections/Footer';
 import Header from '../components/Sections/Header';
-import UpdateForm from '../components/Sections/UpdateForm';
+import CvUpdateForm from '../components/Sections/update-form/CvUpdateForm';
+import PhotoUpdateForm from '../components/Sections/update-form/PhotoUpdateForm';
+import VideoUpdateForm from '../components/Sections/update-form/VideoUpdateForm';
 import {SectionId} from '../data/data';
-import {cvData,GalleryData, GalleryVideo} from '../data/dataDef';
-
+import {CvData, GalleryPhoto, GalleryVideo} from '../data/dataDef';
 
 // const email: string = process.env.KIKO_EMAIL || '';
 // const encodedEmail: string = encodeURIComponent(email);
 // const password: string = process.env.KIKO_PASSWORD || '';
 // const encodedPassword: string = encodeURIComponent(password);
 
-async function onAddPhoto(data: GalleryData): Promise<GalleryData> {
+async function onAddPhoto(data: GalleryPhoto): Promise<GalleryPhoto> {
   const response = await fetch('/api/update', {
     method: 'POST',
     body: JSON.stringify(data),
@@ -43,7 +43,7 @@ async function onAddVideo(data: GalleryVideo): Promise<GalleryVideo> {
   return videoData;
 }
 
-async function onAddExperience(data: cvData): Promise<cvData> {
+async function onAddExperience(data: CvData): Promise<CvData> {
   const response = await fetch('/api/update', {
     method: 'POST',
     body: JSON.stringify(data),
@@ -61,7 +61,6 @@ const Update: FC = memo(() => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function loginHandler(loginData) {
-
     if (loginData.email === 'sakiko_oishi@yahoo.com' && loginData.password === 'password') {
       setIsLoggedIn(true);
     }
@@ -76,7 +75,11 @@ const Update: FC = memo(() => {
         </Section>
       ) : (
         <Section className="m-20 bg-[#190c41]" sectionId={SectionId.Update}>
-         <UpdateForm onAddExperience={onAddExperience} onAddPhoto={onAddPhoto} onAddVideo={onAddVideo} />
+          <div className="flex flex-col justify-around sm:flex-row">
+            <PhotoUpdateForm onAddPhoto={onAddPhoto} />
+            <VideoUpdateForm onAddVideo={onAddVideo} />
+            <CvUpdateForm onAddExperience={onAddExperience} />
+          </div>
         </Section>
       )}
       <Footer />
