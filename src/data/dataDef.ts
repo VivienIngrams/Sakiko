@@ -65,6 +65,12 @@ export interface GalleryVideo {
   title: string;
 }
 
+export interface GalleryData {
+  image: string;
+  category: string;
+}
+
+
 /**
  * CV section
  */
@@ -75,6 +81,13 @@ export interface TimelineItem {
   piece: string;
 }
 
+export interface cvData {
+  company: string;
+  role: string;
+  date: string;
+  piece: string;
+}
+
 /**
  * Social items
  */
@@ -82,4 +95,16 @@ export interface Social {
   label: string;
   Icon: FC<IconProps>;
   href: string;
+}
+
+// Forms
+// *
+export interface AuthFormProps {
+  onLogin: (loginData: {email: string; password: string}) => void;
+}
+
+export interface UpdateFormProps {
+  onAddPhoto: (data: GalleryData) => void;
+  onAddVideo: (data: GalleryVideo) => void;
+  onAddExperience: (data: cvData) => void;
 }

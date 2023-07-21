@@ -1,8 +1,7 @@
 import {FC, FormEvent, memo, useRef} from 'react';
 
-interface AuthFormProps {
-  onLogin: (loginData: {email: string; password: string}) => void;
-}
+import {AuthFormProps} from '../../data/dataDef';
+
 
 const AuthForm: FC<AuthFormProps> = memo(({onLogin}: AuthFormProps) => {
   const emailInputRef = useRef<HTMLInputElement>(null);
