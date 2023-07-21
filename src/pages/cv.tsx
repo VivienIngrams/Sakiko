@@ -116,7 +116,7 @@ export async function getStaticProps() {
     const db = client.db();
     const cvCollection = db.collection('cv');
 
-    const cvData = await cvCollection.find().toArray();
+    const cvData = await cvCollection.find().sort({_id: -1}).toArray();
 
     client.close();
 
