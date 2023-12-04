@@ -50,7 +50,7 @@ import porfolioImage26 from '../images/portfolio/portfolio-20.jpg';
 import porfolioImage24 from '../images/portfolio/portfolio-21.jpg';
 import porfolioImage25 from '../images/portfolio/portfolio-22.jpg';
 import porfolioImage23 from '../images/portfolio/sakiko.jpg';
-import {About, GalleryItem, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
+import {About, GalleryItem, GalleryVideo, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
 
 /**
  * Page meta data
@@ -265,21 +265,25 @@ export const galleryItemsStage: GalleryItem[] = [
   },
 ];
 
-// export const galleryItemsVideos: GalleryVideo[] = [
-//   {
-//     src: 'https://www.youtube.com/embed/2wZzwb1Denc',
-//     title: 'Voyou',
-//   },
-//   {
-//     src: 'https://www.youtube.com/embed/JGsJU5NyJho',
-//     title: 'Chapelier Fou, Il Trastevere',
-//   },
-//   {
-//     src: 'https://www.instagram.com/p/CWSXNKVo7KO/embed',
-//     title: 'Hermès, Les Mains',
-//   },
+export const galleryItemsVideos: GalleryVideo[] = [
+  {
+    src: 'https://www.youtube.com/embed/2wZzwb1Denc',
+    title: 'Voyou',
+  },
+  {
+    src: 'https://www.youtube.com/embed/JGsJU5NyJho',
+    title: 'Chapelier Fou, Il Trastevere',
+  },
+  {
+    src: 'https://www.instagram.com/p/CWSXNKVo7KO/embed',
+    title: 'Hermès, Les Mains',
+  },
+  {
+    src: 'https://www.youtube.com/embed/LcPQ2g2xJIs?si=pndHmU_BBYpkwhjF',
+    title: 'Showrom Dummies #4',
+  },
 
-// ];
+];
 
 /**
  * CV section -- TODO: Standardize resume contact format or offer MDX
@@ -299,94 +303,94 @@ export const education: TimelineItem[] = [
   },
 ];
 
-// export const experience: TimelineItem[] = [
-//   {
-//     date: '2023',
-//     role: 'Video clip',
-//     company: 'Voyou',
-//     piece: "L'Hiver",
-//   },
-//   {
-//     date: '2023',
-//     role: 'Actress',
-//     company: 'Emily in Paris',
-//     piece: 'Darren Star',
-//   },
-//   {
-//     date: '2022',
-//     role: 'Video clip',
-//     company: 'Arnaud Robotini',
-//     piece: 'Fix Me',
-//   },
-//   {
-//     date: '2021',
-//     role: 'Actress',
-//     company: 'Murder Mystery 2',
-//     piece: 'Jeremy Garelick',
-//   },
-//   {
-//     date: '2022',
-//     role: 'Video clip',
-//     company: 'Gabriel Tur',
-//     piece: 'Le star',
-//   },
-//   {
-//     date: '2022 - Present',
-//     role: 'Dancer',
-//     company: 'CCN de Caen',
-//     piece: '3 works for 12',
-//   },
-//   {
-//     date: '2021 - Present',
-//     role: 'Dancer',
-//     company: 'Compagnie Sine Qua Non Art',
-//     piece: 'YUREI',
-//   },
-//   {
-//     date: '2020',
-//     role: 'Video clip',
-//     company: 'Chapelier Fou',
-//     piece: 'Il Trastevere',
-//   },
-//   {
-//     date: '2020 - Present',
-//     role: 'Dancer',
-//     company: 'Compagnie La Bazooka',
-//     piece: 'Pillowgraphies, Monstres indiens',
-//   },
-//   {
-//     date: '2020',
-//     role: 'Dancer',
-//     company: 'Gisèle Vienne and Etienne Bideau-Ray',
-//     piece: 'Showroom Dummies #4',
-//   },
-//   {
-//     date: '2019',
-//     role: 'Dancer',
-//     company: 'Chatha',
-//     piece: "L'Amour sourcier, Narcose",
-//   },
+export const experience: TimelineItem[] = [
+  {
+    date: '2023',
+    role: 'Video clip',
+    company: 'Voyou',
+    piece: "L'Hiver",
+  },
+  {
+    date: '2023',
+    role: 'Actress',
+    company: 'Emily in Paris',
+    piece: 'Darren Star',
+  },
+  {
+    date: '2022',
+    role: 'Video clip',
+    company: 'Arnaud Robotini',
+    piece: 'Fix Me',
+  },
+  {
+    date: '2021',
+    role: 'Actress',
+    company: 'Murder Mystery 2',
+    piece: 'Jeremy Garelick',
+  },
+  {
+    date: '2022',
+    role: 'Video clip',
+    company: 'Gabriel Tur',
+    piece: 'Le star',
+  },
+  {
+    date: '2022 - Present',
+    role: 'Dancer',
+    company: 'CCN de Caen',
+    piece: '3 works for 12',
+  },
+  {
+    date: '2021 - Present',
+    role: 'Dancer',
+    company: 'Compagnie Sine Qua Non Art',
+    piece: 'YUREI',
+  },
+  {
+    date: '2020',
+    role: 'Video clip',
+    company: 'Chapelier Fou',
+    piece: 'Il Trastevere',
+  },
+  {
+    date: '2020 - Present',
+    role: 'Dancer',
+    company: 'Compagnie La Bazooka',
+    piece: 'Pillowgraphies, Monstres indiens',
+  },
+  {
+    date: '2020',
+    role: 'Dancer',
+    company: 'Gisèle Vienne and Etienne Bideau-Ray',
+    piece: 'Showroom Dummies #4',
+  },
+  {
+    date: '2019',
+    role: 'Dancer',
+    company: 'Chatha',
+    piece: "L'Amour sourcier, Narcose",
+  },
 
-//   {
-//     date: 'March 2008 - February 2019',
-//     role: 'Dancer',
-//     company: 'CCN Ballet de Lorraine',
-//     piece:
-//       ' Trisha Brown, Andonis Foniadakis, Rachid Ouramdane,Cindy Van Aker, Mathilde Monnier, Emanuel Gat, William Forsythe, Merce Cunningham, Twyla Tharp, Martha Graham, Cecilia Bengolea and François Chaignaud, Miguel Gutierrez, Alban Richard,  Petter Jacobsson and Thomas Caley, Noé Soulier, Ingun Bjornsgaard, Gisele Vienne, Tero Saarinen, Ginette Laurin, Karole Armitage, Michel Fokine, Bronislava Nijinska, Steven Petronio, Didier Deschamps and Lia Rodriguez, Paolo Ribeiro, Michel Fokine',
-//   },
-//   {
-//     date: '2008',
-//     role: 'Dancer',
-//     company: "Ballet d'Europe",
-//     piece: 'Mireille',
-//   },
-//   {
-//     date: '2007',
-//     role: 'Apprentice dancer',
-//     company: 'Ballet National de Marseille',
-//     piece: 'Concerto Barocco',
-//   },
-// ];
+  {
+    date: 'March 2008 - February 2019',
+    role: 'Dancer',
+    company: 'CCN Ballet de Lorraine',
+    piece:
+      ' Trisha Brown, Andonis Foniadakis, Rachid Ouramdane,Cindy Van Aker, Mathilde Monnier, Emanuel Gat, William Forsythe, Merce Cunningham, Twyla Tharp, Martha Graham, Cecilia Bengolea and François Chaignaud, Miguel Gutierrez, Alban Richard,  Petter Jacobsson and Thomas Caley, Noé Soulier, Ingun Bjornsgaard, Gisele Vienne, Tero Saarinen, Ginette Laurin, Karole Armitage, Michel Fokine, Bronislava Nijinska, Steven Petronio, Didier Deschamps and Lia Rodriguez, Paolo Ribeiro, Michel Fokine',
+  },
+  {
+    date: '2008',
+    role: 'Dancer',
+    company: "Ballet d'Europe",
+    piece: 'Mireille',
+  },
+  {
+    date: '2007',
+    role: 'Apprentice dancer',
+    company: 'Ballet National de Marseille',
+    piece: 'Concerto Barocco',
+  },
+];
 
 /**
  * Social items

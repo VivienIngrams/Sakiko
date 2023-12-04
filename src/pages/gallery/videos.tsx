@@ -5,7 +5,7 @@ import {FC, memo} from 'react';
 import Section from '../../components/Layout/Section';
 import Footer from '../../components/Sections/Footer';
 import Header from '../../components/Sections/Header';
-import {SectionId} from '../../data/data';
+import {galleryItemsVideos, SectionId} from '../../data/data';
 
 const password: string = process.env.MONGODB_PASSWORD || '';
 const encodedPassword: string = encodeURIComponent(password);
@@ -27,7 +27,8 @@ const Videos: FC<videoProps> = memo((props) => {
           <h2 className="self-center text-xl font-thin uppercase text-white">Videos</h2>
           <div></div>
           <div className="grid max-w-full grid-cols-1 gap-y-8 ">
-            {props.videoData.map((item, index) => {
+            {/* {props.videoData.map((item, index) => { */}
+            {galleryItemsVideos.map((item, index) => {
               const {src} = item;
               return (
                 <div className="w-full" key={index}>
