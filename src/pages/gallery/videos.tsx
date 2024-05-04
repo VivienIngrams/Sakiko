@@ -18,7 +18,7 @@ interface videoProps {
   }[];
 }
 
-const Videos: FC<videoProps> = memo((props) => {
+const Videos: FC<videoProps> = memo(() => {
   return (
     <>
       <Header />

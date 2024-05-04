@@ -25,8 +25,8 @@ import bookImage from '../images/portfolio/book(1).jpg';
 import porfolioImage18 from '../images/portfolio/book(2).jpg';
 import porfolioImage19 from '../images/portfolio/kikk.jpg';
 import porfolioImage22 from '../images/portfolio/kiko.jpg';
-import porfolioImage20 from '../images/portfolio/model.jpg';
-import porfolioImage21 from '../images/portfolio/model_.jpg';
+import porfolioImage20 from '../images/portfolio/model2.jpeg';
+import porfolioImage21 from '../images/portfolio/model_2.jpeg';
 import heroImage from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -34,7 +34,6 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
@@ -49,6 +48,9 @@ import porfolioImage27 from '../images/portfolio/portfolio-19.jpg';
 import porfolioImage26 from '../images/portfolio/portfolio-20.jpg';
 import porfolioImage24 from '../images/portfolio/portfolio-21.jpg';
 import porfolioImage25 from '../images/portfolio/portfolio-22.jpg';
+import porfolioImage28 from '../images/portfolio/portfolio (1).jpeg';
+import porfolioImage29 from '../images/portfolio/portfolio (2).jpeg';
+import porfolioImage8 from '../images/portfolio/portfolio (3).jpeg';
 import porfolioImage23 from '../images/portfolio/sakiko.jpg';
 import {About, GalleryItem, GalleryVideo, Hero, HomepageMeta, Social, TimelineItem} from './dataDef';
 
@@ -142,9 +144,7 @@ export const galleryItemsDance: GalleryItem[] = [
     image: porfolioImage4,
   },
 
-  {
-    image: porfolioImage8,
-  },
+
   {
     image: porfolioImage9,
   },
@@ -164,6 +164,15 @@ export const galleryItemsModel: GalleryItem[] = [
     image: porfolioImage2,
   },
 
+  {
+    image: porfolioImage8,
+  },
+  {
+    image: porfolioImage28,
+  },
+  {
+    image: porfolioImage29,
+  },
   {
     image: porfolioImage25,
   },
